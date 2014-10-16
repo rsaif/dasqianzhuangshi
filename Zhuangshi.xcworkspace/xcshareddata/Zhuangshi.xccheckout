@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2F0C6637-7E86-44F9-904C-36192D7E0FC0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Zhuangshi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D33990D2B5932B42C2DD696669D64E07ECC20ACE</key>
+		<string>https://github.com/rsaif/dasqianzhuangshi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Zhuangshi.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D33990D2B5932B42C2DD696669D64E07ECC20ACE</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rsaif/dasqianzhuangshi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D33990D2B5932B42C2DD696669D64E07ECC20ACE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D33990D2B5932B42C2DD696669D64E07ECC20ACE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>zhuangshi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
