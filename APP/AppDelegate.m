@@ -18,7 +18,6 @@
     // Override point for customization after application launch.;
     [self setupViewControllers];
     [self customizeInterface];
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
