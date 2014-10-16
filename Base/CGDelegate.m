@@ -78,12 +78,10 @@
     m = [[CLLocationManager alloc] init];
     m.delegate = self;
     
-    #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     if ([m respondsToSelector:NSSelectorFromString(@"requestWhenInUseAuthorization")]){
-        [m requestAlwaysAuthorization]; // 永久授权
-        [m requestWhenInUseAuthorization]; //使用中授权
+        [m performSelector:NSSelectorFromString(@"requestAlwaysAuthorization")]; // 永久授权
+        [m performSelector:NSSelectorFromString(@"requestWhenInUseAuthorization")]; //使用中授权
     }
-    #endif
     m.desiredAccuracy = kCLLocationAccuracyBest;
     m.distanceFilter = 1000.0f;
     [m startUpdatingLocation];
