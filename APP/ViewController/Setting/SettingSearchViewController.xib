@@ -2,41 +2,37 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingSearchViewController">
             <connections>
-                <outlet property="_tableView" destination="RtG-0U-lUM" id="aup-Lt-r9c"/>
+                <outlet property="_tableView" destination="1Tu-5x-aR9" id="Agc-DJ-HkX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RtG-0U-lUM" customClass="CGTableView_loadView2">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Tu-5x-aR9">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="ZFX-iQ-QXY"/>
-                        <outlet property="delegate" destination="-1" id="2dT-k8-SRR"/>
-                        <outlet property="loadDelegate" destination="-1" id="sqM-Uz-NxJ"/>
+                        <outlet property="dataSource" destination="-1" id="VZH-f8-bN8"/>
+                        <outlet property="delegate" destination="-1" id="jKh-di-taq"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="RtG-0U-lUM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6vS-AN-2PW"/>
-                <constraint firstItem="RtG-0U-lUM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KOm-Ji-ki6"/>
-                <constraint firstAttribute="trailing" secondItem="RtG-0U-lUM" secondAttribute="trailing" id="MXu-oE-An6"/>
-                <constraint firstAttribute="bottom" secondItem="RtG-0U-lUM" secondAttribute="bottom" id="Xx8-j0-6wZ"/>
+                <constraint firstItem="1Tu-5x-aR9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iuc-aE-Zk6"/>
+                <constraint firstAttribute="trailing" secondItem="1Tu-5x-aR9" secondAttribute="trailing" id="Muv-5s-qLt"/>
+                <constraint firstAttribute="bottom" secondItem="1Tu-5x-aR9" secondAttribute="bottom" id="fxK-CY-F0o"/>
+                <constraint firstItem="1Tu-5x-aR9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jcD-y3-kIM"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="119" y="92"/>
+            <point key="canvasLocation" x="252" y="255"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

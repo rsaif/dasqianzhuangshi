@@ -76,8 +76,8 @@
     
     nav.navigationBar.hidden = YES;
     
-    [SlideNavigationController sharedInstance].rightMenu = CreateViewControllerWithNav(@"HomeCityViewController");
-    [(UINavigationController *)[SlideNavigationController sharedInstance].rightMenu setNavigationBarHidden:YES];
+    [SlideNavigationController sharedInstance].leftMenu = CreateViewControllerWithNav(@"HomeCityViewController");
+    [(UINavigationController *)[SlideNavigationController sharedInstance].leftMenu setNavigationBarHidden:YES];
     self.window.rootViewController = nav;
     
 }

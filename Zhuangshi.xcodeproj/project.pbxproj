@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B2827719EF8FCE00CF33D7 /* LearnCatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */; };
+		07B2827819EF8FCE00CF33D7 /* LearnCatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */; };
+		07B2827D19EF900B00CF33D7 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2827B19EF900B00CF33D7 /* HomeDetailViewController.xib */; };
+		07B2828019EF908500CF33D7 /* HomeDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2827F19EF908500CF33D7 /* HomeDetailInfo.m */; };
+		07B2828219EF909800CF33D7 /* HomeDetailInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2828119EF909800CF33D7 /* HomeDetailInfo.xib */; };
+		07B2828719EF951600CF33D7 /* HomeDetailImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2828619EF951600CF33D7 /* HomeDetailImagesCell.xib */; };
+		07B2828819EF961000CF33D7 /* HomeDetailImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2828419EF950800CF33D7 /* HomeDetailImagesCell.m */; };
+		07B2828919EF962300CF33D7 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2827A19EF900B00CF33D7 /* HomeDetailViewController.m */; };
+		07B2828E19EFA78200CF33D7 /* SettingSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2828C19EFA78200CF33D7 /* SettingSearchViewController.m */; };
+		07B2828F19EFA78200CF33D7 /* SettingSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2828D19EFA78200CF33D7 /* SettingSearchViewController.xib */; };
+		07B2829219EFA8E400CF33D7 /* SettingSearchClearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2829119EFA8E400CF33D7 /* SettingSearchClearCell.m */; };
+		07B2829419EFA8F300CF33D7 /* SettingSearchClearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2829319EFA8F300CF33D7 /* SettingSearchClearCell.xib */; };
 		07D118D819ECED02002A4808 /* CGDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D117C519ECED02002A4808 /* CGDelegate.m */; };
 		07D118D919ECED02002A4808 /* CGButtonCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D117C919ECED02002A4808 /* CGButtonCheckBox.m */; };
 		07D118DA19ECED02002A4808 /* CGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D117CC19ECED02002A4808 /* CGCollectionViewCell.m */; };
@@ -226,8 +238,6 @@
 		D0245A861981F4DC007AF5B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0245A851981F4DC007AF5B9 /* libz.dylib */; };
 		D0245A881981F4E9007AF5B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0245A871981F4E9007AF5B9 /* MessageUI.framework */; };
 		D0245A8A1981F4FE007AF5B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0245A891981F4FE007AF5B9 /* SystemConfiguration.framework */; };
-		D0F066A819AEC4A000A205C6 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F066A619AEC4A000A205C6 /* HomeDetailViewController.m */; };
-		D0F066A919AEC4A000A205C6 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F066A719AEC4A000A205C6 /* HomeDetailViewController.xib */; };
 		D0F066AB19AEC78D00A205C6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F066AA19AEC78D00A205C6 /* MapKit.framework */; };
 		D0F066AD19AEC79700A205C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F066AC19AEC79700A205C6 /* CoreLocation.framework */; };
 		FCB500DA34FA4DBFA36EA051 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54529336BDD04FDB95BF6B19 /* libPods.a */; };
@@ -244,6 +254,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07B2827419EF8FCE00CF33D7 /* LearnCatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnCatViewController.h; sourceTree = "<group>"; };
+		07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnCatViewController.m; sourceTree = "<group>"; };
+		07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCatViewController.xib; sourceTree = "<group>"; };
+		07B2827919EF900B00CF33D7 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		07B2827A19EF900B00CF33D7 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		07B2827B19EF900B00CF33D7 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		07B2827E19EF908500CF33D7 /* HomeDetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailInfo.h; sourceTree = "<group>"; };
+		07B2827F19EF908500CF33D7 /* HomeDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailInfo.m; sourceTree = "<group>"; };
+		07B2828119EF909800CF33D7 /* HomeDetailInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailInfo.xib; sourceTree = "<group>"; };
+		07B2828319EF950800CF33D7 /* HomeDetailImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailImagesCell.h; sourceTree = "<group>"; };
+		07B2828419EF950800CF33D7 /* HomeDetailImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailImagesCell.m; sourceTree = "<group>"; };
+		07B2828619EF951600CF33D7 /* HomeDetailImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailImagesCell.xib; sourceTree = "<group>"; };
+		07B2828B19EFA78200CF33D7 /* SettingSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSearchViewController.h; sourceTree = "<group>"; };
+		07B2828C19EFA78200CF33D7 /* SettingSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSearchViewController.m; sourceTree = "<group>"; };
+		07B2828D19EFA78200CF33D7 /* SettingSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSearchViewController.xib; sourceTree = "<group>"; };
+		07B2829019EFA8E400CF33D7 /* SettingSearchClearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSearchClearCell.h; sourceTree = "<group>"; };
+		07B2829119EFA8E400CF33D7 /* SettingSearchClearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSearchClearCell.m; sourceTree = "<group>"; };
+		07B2829319EFA8F300CF33D7 /* SettingSearchClearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSearchClearCell.xib; sourceTree = "<group>"; };
 		07D117C419ECED02002A4808 /* CGDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDelegate.h; sourceTree = "<group>"; };
 		07D117C519ECED02002A4808 /* CGDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDelegate.m; sourceTree = "<group>"; };
 		07D117C819ECED02002A4808 /* CGButtonCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGButtonCheckBox.h; sourceTree = "<group>"; };
@@ -553,9 +581,6 @@
 		D0245A851981F4DC007AF5B9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D0245A871981F4E9007AF5B9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D0245A891981F4FE007AF5B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D0F066A519AEC4A000A205C6 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
-		D0F066A619AEC4A000A205C6 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
-		D0F066A719AEC4A000A205C6 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
 		D0F066AA19AEC78D00A205C6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D0F066AC19AEC79700A205C6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -595,6 +620,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B2827319EF8FCE00CF33D7 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				07B2827419EF8FCE00CF33D7 /* LearnCatViewController.h */,
+				07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */,
+				07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		07B2828A19EFA58500CF33D7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				07B2828B19EFA78200CF33D7 /* SettingSearchViewController.h */,
+				07B2828C19EFA78200CF33D7 /* SettingSearchViewController.m */,
+				07B2828D19EFA78200CF33D7 /* SettingSearchViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		07D117C119ECED01002A4808 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -993,6 +1038,9 @@
 				A3F02C9D19BFFA5400679631 /* HomeCityViewController.h */,
 				A3F02C9E19BFFA5400679631 /* HomeCityViewController.m */,
 				A3F02C9F19BFFA5400679631 /* HomeCityViewController.xib */,
+				07B2827919EF900B00CF33D7 /* HomeDetailViewController.h */,
+				07B2827A19EF900B00CF33D7 /* HomeDetailViewController.m */,
+				07B2827B19EF900B00CF33D7 /* HomeDetailViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1036,6 +1084,15 @@
 				A34C548F19C0472D00C0F5EC /* EffectCell.h */,
 				A34C549019C0472D00C0F5EC /* EffectCell.m */,
 				A34C549219C0473C00C0F5EC /* EffectCell.xib */,
+				07B2827E19EF908500CF33D7 /* HomeDetailInfo.h */,
+				07B2827F19EF908500CF33D7 /* HomeDetailInfo.m */,
+				07B2828119EF909800CF33D7 /* HomeDetailInfo.xib */,
+				07B2828319EF950800CF33D7 /* HomeDetailImagesCell.h */,
+				07B2828419EF950800CF33D7 /* HomeDetailImagesCell.m */,
+				07B2828619EF951600CF33D7 /* HomeDetailImagesCell.xib */,
+				07B2829019EFA8E400CF33D7 /* SettingSearchClearCell.h */,
+				07B2829119EFA8E400CF33D7 /* SettingSearchClearCell.m */,
+				07B2829319EFA8F300CF33D7 /* SettingSearchClearCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1065,11 +1122,10 @@
 		D018B6871989EE9C0056AF32 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				07B2828A19EFA58500CF33D7 /* Setting */,
+				07B2827319EF8FCE00CF33D7 /* Learn */,
 				A34C548519C0369100C0F5EC /* Effect */,
 				A3C37BB119BF031900BD7ACC /* Home */,
-				D0F066A519AEC4A000A205C6 /* HomeDetailViewController.h */,
-				D0F066A619AEC4A000A205C6 /* HomeDetailViewController.m */,
-				D0F066A719AEC4A000A205C6 /* HomeDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1392,6 +1448,7 @@
 				07D1193919ECEE6E002A4808 /* Images.xcassets in Resources */,
 				A3D4312119BEFB6900B09617 /* img_bg_findmyhome.png in Resources */,
 				A3D4312E19BEFB6900B09617 /* img_btn_enter@2x.png in Resources */,
+				07B2828219EF909800CF33D7 /* HomeDetailInfo.xib in Resources */,
 				A3D4312819BEFB6900B09617 /* img_bg_photo@2x.png in Resources */,
 				A3D4313419BEFB6900B09617 /* img_btn_findmyhome@2x.png in Resources */,
 				A3D4311719BEFB6900B09617 /* checked.png in Resources */,
@@ -1410,6 +1467,7 @@
 				A3D4312219BEFB6900B09617 /* img_bg_findmyhome@2x.png in Resources */,
 				07D1190719ECED02002A4808 /* Readme.rtf in Resources */,
 				A3D4314219BEFB6900B09617 /* img_btn_picture@2x.png in Resources */,
+				07B2828719EF951600CF33D7 /* HomeDetailImagesCell.xib in Resources */,
 				A3D4316B19BEFB6900B09617 /* img_search.png in Resources */,
 				A3D4311F19BEFB6900B09617 /* img_bg_findmyhome_search.png in Resources */,
 				A3D4311819BEFB6900B09617 /* checked@2x.png in Resources */,
@@ -1428,19 +1486,20 @@
 				A3D4311919BEFB6900B09617 /* img_arrow_pages.png in Resources */,
 				A3D4317619BEFB6900B09617 /* img_study_three@2x.png in Resources */,
 				A3D4314E19BEFB6900B09617 /* img_building_photo@2x.png in Resources */,
+				07B2827D19EF900B00CF33D7 /* HomeDetailViewController.xib in Resources */,
 				A3D4315519BEFB6900B09617 /* img_edit_data_situation.png in Resources */,
 				A3D4313F19BEFB6900B09617 /* img_btn_picture_selected.png in Resources */,
 				A3D4313619BEFB6900B09617 /* img_btn_forall@2x.png in Resources */,
 				A3D4316219BEFB6900B09617 /* img_masking_display_bottom@2x.png in Resources */,
 				A3D4311C19BEFB6900B09617 /* img_banner_textbg@2x.png in Resources */,
 				A3D4312C19BEFB6900B09617 /* img_btn_cleanhistory@2x.png in Resources */,
-				D0F066A919AEC4A000A205C6 /* HomeDetailViewController.xib in Resources */,
 				A3D4314419BEFB6900B09617 /* img_btn_quite@2x.png in Resources */,
 				A3D4313319BEFB6900B09617 /* img_btn_findmyhome.png in Resources */,
 				A3D4315319BEFB6900B09617 /* img_edit_data_photo.png in Resources */,
 				A3D4316019BEFB6900B09617 /* img_mainpage_photo@2x.png in Resources */,
 				A3D4317019BEFB6900B09617 /* img_study_catalog@2x.png in Resources */,
 				A3D4316819BEFB6900B09617 /* img_photo_list@2x.png in Resources */,
+				07B2827819EF8FCE00CF33D7 /* LearnCatViewController.xib in Resources */,
 				A3D4315719BEFB6900B09617 /* img_getcode_inputbox.png in Resources */,
 				07D1191119ECED02002A4808 /* area.plist in Resources */,
 				A3D4317419BEFB6900B09617 /* img_study_one@2x.png in Resources */,
@@ -1490,12 +1549,14 @@
 				A3D4311E19BEFB6900B09617 /* img_banner@2x.png in Resources */,
 				A3D4316519BEFB6900B09617 /* img_photo_list_photo.png in Resources */,
 				A3D4317919BEFB6900B09617 /* un-checked.png in Resources */,
+				07B2828F19EFA78200CF33D7 /* SettingSearchViewController.xib in Resources */,
 				A3D4313219BEFB6900B09617 /* img_btn_findmyhome_selected@2x.png in Resources */,
 				A3D4317119BEFB6900B09617 /* img_study_four.png in Resources */,
 				A3D4315F19BEFB6900B09617 /* img_mainpage_photo.png in Resources */,
 				A34C548A19C036A800C0F5EC /* EffectViewController.xib in Resources */,
 				A3F02CA119BFFA5400679631 /* HomeCityViewController.xib in Resources */,
 				A3D4313719BEFB6900B09617 /* img_btn_getcode_unusable.png in Resources */,
+				07B2829419EFA8F300CF33D7 /* SettingSearchClearCell.xib in Resources */,
 				A3D4312019BEFB6900B09617 /* img_bg_findmyhome_search@2x.png in Resources */,
 				07D1190D19ECED02002A4808 /* img_pic_bg@2x.png in Resources */,
 				A3D4315619BEFB6900B09617 /* img_edit_data_situation@2x.png in Resources */,
@@ -1568,9 +1629,11 @@
 				07D1192819ECED02002A4808 /* SDWebImageDownloaderOperation.m in Sources */,
 				A34C548919C036A800C0F5EC /* EffectViewController.m in Sources */,
 				A3777FB019BF49C3009916A1 /* CGViewAnimate.m in Sources */,
+				07B2827719EF8FCE00CF33D7 /* LearnCatViewController.m in Sources */,
 				07D1193119ECED02002A4808 /* UIView+WebCacheOperation.m in Sources */,
 				07D118DB19ECED02002A4808 /* CGTableViewCell.m in Sources */,
 				07D118F719ECED02002A4808 /* CropView.m in Sources */,
+				07B2829219EFA8E400CF33D7 /* SettingSearchClearCell.m in Sources */,
 				D018B79B1989F15E0056AF32 /* AppDelegate.m in Sources */,
 				07D118E219ECED02002A4808 /* CGCollectionViewLayout.m in Sources */,
 				07D118F819ECED02002A4808 /* VideoView.m in Sources */,
@@ -1579,13 +1642,16 @@
 				07D1191019ECED02002A4808 /* ViewStyle.m in Sources */,
 				07D118E119ECED02002A4808 /* CGCollectionView.m in Sources */,
 				A3C37BCD19BF05DF00BD7ACC /* EntityHomeSlide.m in Sources */,
+				07B2828819EF961000CF33D7 /* HomeDetailImagesCell.m in Sources */,
 				07D118EE19ECED02002A4808 /* PDFScrollView.m in Sources */,
+				07B2828919EF962300CF33D7 /* HomeDetailViewController.m in Sources */,
 				07D1192919ECED02002A4808 /* SDWebImageManager.m in Sources */,
 				07D118DA19ECED02002A4808 /* CGCollectionViewCell.m in Sources */,
 				07D118E619ECED02002A4808 /* CGScrollView.m in Sources */,
 				D018B79F198A2A3D0056AF32 /* Service.m in Sources */,
 				D018B68F1989EE9C0056AF32 /* Entity.m in Sources */,
 				07D1190419ECED02002A4808 /* CGAreaBook.m in Sources */,
+				07B2828019EF908500CF33D7 /* HomeDetailInfo.m in Sources */,
 				07D1191F19ECED02002A4808 /* Form.m in Sources */,
 				07D118F119ECED02002A4808 /* CGTableView+loadView2.m in Sources */,
 				07D118EC19ECED02002A4808 /* CGScrollViewShow.m in Sources */,
@@ -1617,6 +1683,7 @@
 				07D1192719ECED02002A4808 /* SDWebImageDownloader.m in Sources */,
 				07D118E919ECED02002A4808 /* CGView.m in Sources */,
 				07D118EA19ECED02002A4808 /* CGALabel.m in Sources */,
+				07B2828E19EFA78200CF33D7 /* SettingSearchViewController.m in Sources */,
 				07D1192D19ECED02002A4808 /* UIImage+MultiFormat.m in Sources */,
 				07D118FC19ECED02002A4808 /* ViewControllerImpl.m in Sources */,
 				07D1192619ECED02002A4808 /* SDWebImageDecoder.m in Sources */,
@@ -1639,7 +1706,6 @@
 				07D118DC19ECED02002A4808 /* CGTableViewEditCell.m in Sources */,
 				07D1192B19ECED02002A4808 /* UIButton+WebCache.m in Sources */,
 				07D118F919ECED02002A4808 /* CGNavigationController.m in Sources */,
-				D0F066A819AEC4A000A205C6 /* HomeDetailViewController.m in Sources */,
 				07D1192219ECED02002A4808 /* MKAnnotationView+WebCache.m in Sources */,
 				07D1192319ECED02002A4808 /* NSData+ImageContentType.m in Sources */,
 				A34C549119C0472D00C0F5EC /* EffectCell.m in Sources */,

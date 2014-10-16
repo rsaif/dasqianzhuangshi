@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeDetailViewController">
             <connections>
+                <outlet property="_tableView" destination="3Iw-rm-4Dc" id="Yi2-9n-Ayc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,30 +16,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-lj-oAe" customClass="CGViewAnimate">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
-                    <subviews>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="img_bg_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FpC-D3-Ceo">
-                            <rect key="frame" x="67" y="96" width="98" height="89"/>
-                        </imageView>
-                    </subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Iw-rm-4Dc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="320" id="ROS-AL-QVb"/>
-                        <constraint firstAttribute="width" constant="320" id="u64-Rv-mGZ"/>
-                    </constraints>
-                </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="J5Y-Cc-bni"/>
+                        <outlet property="delegate" destination="-1" id="xaQ-Zl-boD"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="TgQ-lj-oAe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OPg-Tv-aZL"/>
-                <constraint firstItem="TgQ-lj-oAe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g4J-aa-BLb"/>
+                <constraint firstAttribute="bottom" secondItem="3Iw-rm-4Dc" secondAttribute="bottom" id="GRs-h9-YMm"/>
+                <constraint firstAttribute="trailing" secondItem="3Iw-rm-4Dc" secondAttribute="trailing" id="O9Z-fA-eg4"/>
+                <constraint firstItem="3Iw-rm-4Dc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VdV-kC-gTH"/>
+                <constraint firstItem="3Iw-rm-4Dc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g2c-2A-vhN"/>
             </constraints>
+            <point key="canvasLocation" x="305" y="231"/>
         </view>
     </objects>
-    <resources>
-        <image name="img_bg_photo.png" width="80" height="80"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

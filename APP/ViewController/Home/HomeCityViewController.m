@@ -8,6 +8,7 @@
 
 #import "HomeCityViewController.h"
 #import "HomeCityCell.h"
+#import <SlideNavigationController.h>
 @interface HomeCityViewController ()<UISearchBarDelegate>
 
 @end
@@ -28,6 +29,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 #pragma mark - custom methods
 -(void)addSearchBar{
     UISearchBar *bar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
@@ -46,10 +48,12 @@
 
 #pragma mark - delegate for searchbar
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
-
+//    SettingSearchViewController
+    [[SlideNavigationController sharedInstance] toggleRightMenu];
+    [[(UITabBarController *)[[SlideNavigationController sharedInstance] topViewController] viewControllers][0] pushViewController:CreateViewController(@"SettingSearchViewController") animated:YES];
     return NO;
 }
-#pragma mark - delegate for UICollectionView
+#pragma mark - delegate for UITableView
 -(void)loadMore{
     
 }

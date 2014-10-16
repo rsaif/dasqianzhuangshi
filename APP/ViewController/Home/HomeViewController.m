@@ -10,6 +10,7 @@
 #import "HomeSliderCell.h"
 #import "HomeBuildingCell.h"
 #import <SlideNavigationController.h>
+#import "HomeDetailViewController.h"
 //#import "HomeCategoryViewController.h"
 //#import "HomeGoodListViewController.h"
 @implementation HomeViewController
@@ -26,8 +27,8 @@
     [_tableView registerNib:[UINib nibWithNibName:@"HomeSliderCell" bundle:nil] forCellReuseIdentifier:@"HomeSliderCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeBuildingCell" bundle:nil] forCellReuseIdentifier:@"HomeBuildingCell"];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu)];
-    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu)];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
     
     
     
@@ -45,7 +46,10 @@
     
 }
 -(void)refreshView{
-    
+//    CGDataResult *r = [[Service serviceWithRequest:[self createRequestWithPost:YES]] getData];
+//    if (r.status.boolValue) {
+//        
+//    }
 }
 
 
@@ -72,7 +76,9 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataList.count+1;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:CreateViewController(@"HomeDetailViewController") animated:YES];
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.item) {
         case 0:
