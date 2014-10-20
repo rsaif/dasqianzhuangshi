@@ -226,6 +226,14 @@
 		A3D4317A19BEFB6900B09617 /* un-checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D4311619BEFB6900B09617 /* un-checked@2x.png */; };
 		A3F02CA019BFFA5400679631 /* HomeCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F02C9E19BFFA5400679631 /* HomeCityViewController.m */; };
 		A3F02CA119BFFA5400679631 /* HomeCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F02C9F19BFFA5400679631 /* HomeCityViewController.xib */; };
+		C9B259DD19F4956B00691E8B /* ExtendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259D219F4956B00691E8B /* ExtendViewCell.m */; };
+		C9B259DE19F4956B00691E8B /* ExtendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B259D319F4956B00691E8B /* ExtendViewCell.xib */; };
+		C9B259DF19F4956B00691E8B /* KKContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259D519F4956B00691E8B /* KKContactCell.m */; };
+		C9B259E019F4956B00691E8B /* KKContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B259D619F4956B00691E8B /* KKContactCell.xib */; };
+		C9B259E119F4956B00691E8B /* LearnCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259D819F4956B00691E8B /* LearnCatCell.m */; };
+		C9B259E219F4956B00691E8B /* LearnCatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B259D919F4956B00691E8B /* LearnCatCell.xib */; };
+		C9B259E319F4956B00691E8B /* PlaceAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259DB19F4956B00691E8B /* PlaceAddressCell.m */; };
+		C9B259E419F4956B00691E8B /* PlaceAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B259DC19F4956B00691E8B /* PlaceAddressCell.xib */; };
 		D018B68B1989EE9C0056AF32 /* Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D018B66A1989EE9C0056AF32 /* Base.xcdatamodeld */; };
 		D018B68E1989EE9C0056AF32 /* CustomUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B6731989EE9C0056AF32 /* CustomUtil.m */; };
 		D018B68F1989EE9C0056AF32 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B6761989EE9C0056AF32 /* Entity.m */; };
@@ -561,6 +569,18 @@
 		A3F02C9D19BFFA5400679631 /* HomeCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCityViewController.h; sourceTree = "<group>"; };
 		A3F02C9E19BFFA5400679631 /* HomeCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCityViewController.m; sourceTree = "<group>"; };
 		A3F02C9F19BFFA5400679631 /* HomeCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCityViewController.xib; sourceTree = "<group>"; };
+		C9B259D119F4956B00691E8B /* ExtendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendViewCell.h; sourceTree = "<group>"; };
+		C9B259D219F4956B00691E8B /* ExtendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendViewCell.m; sourceTree = "<group>"; };
+		C9B259D319F4956B00691E8B /* ExtendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtendViewCell.xib; sourceTree = "<group>"; };
+		C9B259D419F4956B00691E8B /* KKContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKContactCell.h; sourceTree = "<group>"; };
+		C9B259D519F4956B00691E8B /* KKContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKContactCell.m; sourceTree = "<group>"; };
+		C9B259D619F4956B00691E8B /* KKContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKContactCell.xib; sourceTree = "<group>"; };
+		C9B259D719F4956B00691E8B /* LearnCatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnCatCell.h; sourceTree = "<group>"; };
+		C9B259D819F4956B00691E8B /* LearnCatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnCatCell.m; sourceTree = "<group>"; };
+		C9B259D919F4956B00691E8B /* LearnCatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCatCell.xib; sourceTree = "<group>"; };
+		C9B259DA19F4956B00691E8B /* PlaceAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAddressCell.h; sourceTree = "<group>"; };
+		C9B259DB19F4956B00691E8B /* PlaceAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAddressCell.m; sourceTree = "<group>"; };
+		C9B259DC19F4956B00691E8B /* PlaceAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceAddressCell.xib; sourceTree = "<group>"; };
 		D018B66B1989EE9C0056AF32 /* Base.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Base.xcdatamodel; sourceTree = "<group>"; };
 		D018B6721989EE9C0056AF32 /* CustomUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUtil.h; sourceTree = "<group>"; };
 		D018B6731989EE9C0056AF32 /* CustomUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUtil.m; sourceTree = "<group>"; };
@@ -1072,6 +1092,18 @@
 		D018B66C1989EE9C0056AF32 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C9B259D119F4956B00691E8B /* ExtendViewCell.h */,
+				C9B259D219F4956B00691E8B /* ExtendViewCell.m */,
+				C9B259D319F4956B00691E8B /* ExtendViewCell.xib */,
+				C9B259D419F4956B00691E8B /* KKContactCell.h */,
+				C9B259D519F4956B00691E8B /* KKContactCell.m */,
+				C9B259D619F4956B00691E8B /* KKContactCell.xib */,
+				C9B259D719F4956B00691E8B /* LearnCatCell.h */,
+				C9B259D819F4956B00691E8B /* LearnCatCell.m */,
+				C9B259D919F4956B00691E8B /* LearnCatCell.xib */,
+				C9B259DA19F4956B00691E8B /* PlaceAddressCell.h */,
+				C9B259DB19F4956B00691E8B /* PlaceAddressCell.m */,
+				C9B259DC19F4956B00691E8B /* PlaceAddressCell.xib */,
 				A3C37BC619BF041700BD7ACC /* HomeSliderCell.h */,
 				A3C37BC719BF041700BD7ACC /* HomeSliderCell.m */,
 				A3C37BC819BF041700BD7ACC /* HomeSliderCell.xib */,
@@ -1459,9 +1491,11 @@
 				07D1190E19ECED02002A4808 /* refresh@2x.png in Resources */,
 				A3D4312319BEFB6900B09617 /* img_bg_function.png in Resources */,
 				A3D4313E19BEFB6900B09617 /* img_btn_mine@2x.png in Resources */,
+				C9B259E219F4956B00691E8B /* LearnCatCell.xib in Resources */,
 				A3D4316719BEFB6900B09617 /* img_photo_list.png in Resources */,
 				A3D4313819BEFB6900B09617 /* img_btn_getcode_unusable@2x.png in Resources */,
 				A34C548419C01D0A00C0F5EC /* HomeCityCell.xib in Resources */,
+				C9B259DE19F4956B00691E8B /* ExtendViewCell.xib in Resources */,
 				A3D4313919BEFB6900B09617 /* img_btn_getcode.png in Resources */,
 				A3D4315219BEFB6900B09617 /* img_edit_data_address@2x.png in Resources */,
 				A3D4312219BEFB6900B09617 /* img_bg_findmyhome@2x.png in Resources */,
@@ -1506,9 +1540,11 @@
 				A3D4314619BEFB6900B09617 /* img_btn_quote@2x.png in Resources */,
 				A3D4317519BEFB6900B09617 /* img_study_three.png in Resources */,
 				A3D4312419BEFB6900B09617 /* img_bg_function@2x.png in Resources */,
+				C9B259E019F4956B00691E8B /* KKContactCell.xib in Resources */,
 				A3D4313519BEFB6900B09617 /* img_btn_forall.png in Resources */,
 				A3D4313C19BEFB6900B09617 /* img_btn_mine_selected@2x.png in Resources */,
 				07D1190819ECED02002A4808 /* color_black@2x.png in Resources */,
+				C9B259E419F4956B00691E8B /* PlaceAddressCell.xib in Resources */,
 				A3D4313A19BEFB6900B09617 /* img_btn_getcode@2x.png in Resources */,
 				A3D4313119BEFB6900B09617 /* img_btn_findmyhome_selected.png in Resources */,
 				A3D4316F19BEFB6900B09617 /* img_study_catalog.png in Resources */,
@@ -1627,6 +1663,7 @@
 			files = (
 				D018B6951989EE9C0056AF32 /* ShareHandle.m in Sources */,
 				07D1192819ECED02002A4808 /* SDWebImageDownloaderOperation.m in Sources */,
+				C9B259E119F4956B00691E8B /* LearnCatCell.m in Sources */,
 				A34C548919C036A800C0F5EC /* EffectViewController.m in Sources */,
 				A3777FB019BF49C3009916A1 /* CGViewAnimate.m in Sources */,
 				07B2827719EF8FCE00CF33D7 /* LearnCatViewController.m in Sources */,
@@ -1653,6 +1690,7 @@
 				07D1190419ECED02002A4808 /* CGAreaBook.m in Sources */,
 				07B2828019EF908500CF33D7 /* HomeDetailInfo.m in Sources */,
 				07D1191F19ECED02002A4808 /* Form.m in Sources */,
+				C9B259DF19F4956B00691E8B /* KKContactCell.m in Sources */,
 				07D118F119ECED02002A4808 /* CGTableView+loadView2.m in Sources */,
 				07D118EC19ECED02002A4808 /* CGScrollViewShow.m in Sources */,
 				07D1193019ECED02002A4808 /* UIImageView+WebCache.m in Sources */,
@@ -1670,6 +1708,7 @@
 				07D118F019ECED02002A4808 /* CGTableView+loadView.m in Sources */,
 				07D118F519ECED02002A4808 /* CGViewWithCollectionVIew.m in Sources */,
 				07D1192F19ECED02002A4808 /* UIImageView+HighlightedWebCache.m in Sources */,
+				C9B259DD19F4956B00691E8B /* ExtendViewCell.m in Sources */,
 				07D1190019ECED02002A4808 /* ManagedObject.m in Sources */,
 				07D1190619ECED02002A4808 /* CGService.m in Sources */,
 				07D1193219ECED02002A4808 /* Soap.m in Sources */,
@@ -1682,6 +1721,7 @@
 				D018B7971989F1090056AF32 /* WSGButtonRadius2.m in Sources */,
 				07D1192719ECED02002A4808 /* SDWebImageDownloader.m in Sources */,
 				07D118E919ECED02002A4808 /* CGView.m in Sources */,
+				C9B259E319F4956B00691E8B /* PlaceAddressCell.m in Sources */,
 				07D118EA19ECED02002A4808 /* CGALabel.m in Sources */,
 				07B2828E19EFA78200CF33D7 /* SettingSearchViewController.m in Sources */,
 				07D1192D19ECED02002A4808 /* UIImage+MultiFormat.m in Sources */,

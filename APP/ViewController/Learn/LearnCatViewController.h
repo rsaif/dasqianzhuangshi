@@ -8,6 +8,15 @@
 
 #import "ViewControllerImpl.h"
 
-@interface LearnCatViewController : ViewControllerImpl
+@interface LearnCatViewController : ViewControllerImpl<UITableViewDelegate,UITableViewDataSource>
+{
+IBOutlet UITableView *mainTable;
+NSInteger endSection;
+NSInteger didSection;
+BOOL ifOpen;
+}
+
+@property (nonatomic,retain)NSMutableArray *array;
+
 
 @end
