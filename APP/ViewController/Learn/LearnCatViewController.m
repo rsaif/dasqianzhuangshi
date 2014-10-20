@@ -33,19 +33,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    mainTable.delegate = self;
+    
+    
+      mainTable.delegate = self;
     mainTable.dataSource = self;
+    
+    [mainTable setScrollEnabled:NO];
+    [self setExtracellhidden:mainTable];
+    
    
-    _array = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8", nil];
+    _array = [[NSMutableArray alloc]initWithObjects:@"img_study_one.png",@"img_study_two.png",@"img_study_three.png",@"img_study_four.png",@"img_study_five.png", nil];
+    
     didSection = _array.count+1;
     [self performSelector:@selector(firstOneClicked) withObject:self afterDelay:0.2f];
     
    }
+-(void)setExtracellhidden:(UITableView*)tableView
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
 - (void)firstOneClicked{
     didSection = 0;
     endSection = 0;
     [self didSelectCellRowFirstDo:YES nextDo:NO];
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == didSection) {
         return 1;
@@ -71,7 +85,7 @@
                 }
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            [cell.detailLabel setText:@"asfssdsafsasfsaf"];
+//           [cell.detailLabel setText:@"asfssdsafsasfsaf"];
         }
         return cell;
     }
@@ -91,7 +105,7 @@
                    
                 }
             }
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+          //  cell.selectionStyle = UITableViewCellSelectionStyleNone;
             [cell.titleLabel setText:@"asfssdsafsasfsaf"];
         }
         return cell;
@@ -104,12 +118,12 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == didSection) {
-        return 95;
+        return 130;
     }
     return 0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 110;
+    return 65;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *mView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 110)];
@@ -120,6 +134,8 @@
     
     LearnCatCell *cell  = CreateCell(@"LearnCatCell");
     //[logoView setImage:[UIImage imageNamed:[_array objectAtIndex:section]]];
+    cell.imgStudy.image = [UIImage imageNamed:[_array objectAtIndex:section]];
+    
     [mView addSubview:cell];
     
     if (section<_array.count-1) {

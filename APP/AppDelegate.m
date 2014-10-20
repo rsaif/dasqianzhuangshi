@@ -46,7 +46,7 @@
     
     
     
-    ViewControllerImpl *thirdViewController = CreateViewController(@"HomeViewController");
+    ViewControllerImpl *thirdViewController = CreateViewController(@"LearnCatViewController");
     thirdViewController.title = @"学装修";
     thirdViewController.tabBarItem.image = [UIImage imageNamed:@"img_btn_study"];
     UINavigationController *thirdNavigationController = [[UINavigationController alloc]
@@ -55,7 +55,7 @@
     [thirdNavigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]}];
     
     
-    ViewControllerImpl *fourthViewController = CreateViewController(@"HomeViewController");
+    ViewControllerImpl *fourthViewController = CreateViewController(@"SettingViewController");
     fourthViewController.title = @"我的";
     fourthViewController.tabBarItem.image = [UIImage imageNamed:@"img_btn_mine"];
     UINavigationController *fourthNavigationController = [[UINavigationController alloc]

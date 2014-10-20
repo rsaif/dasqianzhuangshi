@@ -11,6 +11,6 @@
 @interface PlaceAddressCell : UITableViewCell
 {
 }
-@property(nonatomic,retain)UIImageView *backimageView;
+@property(nonatomic,retain)IBOutlet UIImageView *backimageView;
 - (IBAction)detailClicked:(id)sender;
 @end

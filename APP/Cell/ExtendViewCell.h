@@ -11,8 +11,6 @@
 @interface ExtendViewCell : UITableViewCell
 {
 }
-@property(nonatomic,retain)IBOutlet UIImageView *backimageView;
-@property(nonatomic,retain)IBOutlet UIButton *listbutton;
--(IBAction)button:(id)sender;
-
+@property(nonatomic,retain)IBOutlet UIImageView *picture;
+@property(nonatomic,retain)IBOutlet UILabel *minglabel;
 @end
