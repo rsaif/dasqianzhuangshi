@@ -13,7 +13,6 @@
 #import "HomeDetailViewController.h"
 //#import "HomeCategoryViewController.h"
 //#import "HomeGoodListViewController.h"
-#import "EditViewController.h"
 @implementation HomeViewController
 
 
@@ -21,10 +20,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    EditViewController *edit = [[EditViewController alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:edit];
-     
-    
     _dataList = [NSMutableArray new];
     _dataListSlide = [NSMutableArray new];
     [_dataList addObjectsFromArray:@[@"",@"",@"",@"",@"",@""]];

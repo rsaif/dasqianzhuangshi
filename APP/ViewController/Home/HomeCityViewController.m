@@ -61,7 +61,11 @@
     
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[SlideNavigationController sharedInstance] toggleRightMenu];
+    [[(UITabBarController *)[[SlideNavigationController sharedInstance] topViewController] viewControllers][0] pushViewController:CreateViewController(@"HomeHouseListViewController") animated:YES];
+    
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:

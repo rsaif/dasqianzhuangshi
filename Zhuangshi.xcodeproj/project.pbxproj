@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0711DED919F4F8410027C4FE /* HomeHouseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DED719F4F8410027C4FE /* HomeHouseListViewController.m */; };
+		0711DEDA19F4F8410027C4FE /* HomeHouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DED819F4F8410027C4FE /* HomeHouseListViewController.xib */; };
+		0711DEDC19F510730027C4FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEDB19F510730027C4FE /* AppDelegate.m */; };
+		0711DEE919F511480027C4FE /* Ediitheader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DEDD19F511480027C4FE /* Ediitheader.xib */; };
+		0711DEEA19F511480027C4FE /* EditheaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEDF19F511480027C4FE /* EditheaderCell.m */; };
+		0711DEEB19F511480027C4FE /* Savebtton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEE119F511480027C4FE /* Savebtton.m */; };
+		0711DEEC19F511480027C4FE /* Savebtton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DEE219F511480027C4FE /* Savebtton.xib */; };
+		0711DEED19F511480027C4FE /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEE419F511480027C4FE /* SettingView.m */; };
+		0711DEEE19F511480027C4FE /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DEE519F511480027C4FE /* SettingView.xib */; };
+		0711DEEF19F511480027C4FE /* UserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEE719F511480027C4FE /* UserViewCell.m */; };
+		0711DEF019F511480027C4FE /* UserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DEE819F511480027C4FE /* UserViewCell.xib */; };
+		0711DEF419F511740027C4FE /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEF219F511740027C4FE /* SettingViewController.m */; };
+		0711DEF519F511740027C4FE /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0711DEF319F511740027C4FE /* SettingViewController.xib */; };
+		0711DEF819F511830027C4FE /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0711DEF719F511830027C4FE /* testTableViewController.m */; };
 		07B2827719EF8FCE00CF33D7 /* LearnCatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */; };
 		07B2827819EF8FCE00CF33D7 /* LearnCatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */; };
 		07B2827D19EF900B00CF33D7 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B2827B19EF900B00CF33D7 /* HomeDetailViewController.xib */; };
@@ -240,7 +254,6 @@
 		D018B6951989EE9C0056AF32 /* ShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B6861989EE9C0056AF32 /* ShareHandle.m */; };
 		D018B7971989F1090056AF32 /* WSGButtonRadius2.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B78C1989F1090056AF32 /* WSGButtonRadius2.m */; };
 		D018B7981989F1090056AF32 /* WSGButtonRadius5.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B78E1989F1090056AF32 /* WSGButtonRadius5.m */; };
-		D018B79B1989F15E0056AF32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B79A1989F15E0056AF32 /* AppDelegate.m */; };
 		D018B79F198A2A3D0056AF32 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = D018B79E198A2A3D0056AF32 /* Service.m */; };
 		D0245A841981F4D5007AF5B9 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0245A831981F4D5007AF5B9 /* libc++.dylib */; };
 		D0245A861981F4DC007AF5B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0245A851981F4DC007AF5B9 /* libz.dylib */; };
@@ -262,6 +275,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0711DED619F4F8410027C4FE /* HomeHouseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHouseListViewController.h; sourceTree = "<group>"; };
+		0711DED719F4F8410027C4FE /* HomeHouseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHouseListViewController.m; sourceTree = "<group>"; };
+		0711DED819F4F8410027C4FE /* HomeHouseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHouseListViewController.xib; sourceTree = "<group>"; };
+		0711DEDB19F510730027C4FE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0711DEDD19F511480027C4FE /* Ediitheader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ediitheader.xib; sourceTree = "<group>"; };
+		0711DEDE19F511480027C4FE /* EditheaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditheaderCell.h; sourceTree = "<group>"; };
+		0711DEDF19F511480027C4FE /* EditheaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditheaderCell.m; sourceTree = "<group>"; };
+		0711DEE019F511480027C4FE /* Savebtton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Savebtton.h; sourceTree = "<group>"; };
+		0711DEE119F511480027C4FE /* Savebtton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Savebtton.m; sourceTree = "<group>"; };
+		0711DEE219F511480027C4FE /* Savebtton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Savebtton.xib; sourceTree = "<group>"; };
+		0711DEE319F511480027C4FE /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		0711DEE419F511480027C4FE /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		0711DEE519F511480027C4FE /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		0711DEE619F511480027C4FE /* UserViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewCell.h; sourceTree = "<group>"; };
+		0711DEE719F511480027C4FE /* UserViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewCell.m; sourceTree = "<group>"; };
+		0711DEE819F511480027C4FE /* UserViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewCell.xib; sourceTree = "<group>"; };
+		0711DEF119F511740027C4FE /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		0711DEF219F511740027C4FE /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		0711DEF319F511740027C4FE /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		0711DEF619F511830027C4FE /* testTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
+		0711DEF719F511830027C4FE /* testTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTableViewController.m; sourceTree = "<group>"; };
 		07B2827419EF8FCE00CF33D7 /* LearnCatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnCatViewController.h; sourceTree = "<group>"; };
 		07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnCatViewController.m; sourceTree = "<group>"; };
 		07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCatViewController.xib; sourceTree = "<group>"; };
@@ -593,7 +627,6 @@
 		D018B78D1989F1090056AF32 /* WSGButtonRadius5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSGButtonRadius5.h; sourceTree = "<group>"; };
 		D018B78E1989F1090056AF32 /* WSGButtonRadius5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSGButtonRadius5.m; sourceTree = "<group>"; };
 		D018B7991989F15E0056AF32 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D018B79A1989F15E0056AF32 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D018B79C1989F1A90056AF32 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		D018B79D198A2A3D0056AF32 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		D018B79E198A2A3D0056AF32 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
@@ -640,9 +673,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0711DEF919F511AC0027C4FE /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		07B2827319EF8FCE00CF33D7 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				0711DEF619F511830027C4FE /* testTableViewController.h */,
+				0711DEF719F511830027C4FE /* testTableViewController.m */,
 				07B2827419EF8FCE00CF33D7 /* LearnCatViewController.h */,
 				07B2827519EF8FCE00CF33D7 /* LearnCatViewController.m */,
 				07B2827619EF8FCE00CF33D7 /* LearnCatViewController.xib */,
@@ -653,6 +695,9 @@
 		07B2828A19EFA58500CF33D7 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				0711DEF119F511740027C4FE /* SettingViewController.h */,
+				0711DEF219F511740027C4FE /* SettingViewController.m */,
+				0711DEF319F511740027C4FE /* SettingViewController.xib */,
 				07B2828B19EFA78200CF33D7 /* SettingSearchViewController.h */,
 				07B2828C19EFA78200CF33D7 /* SettingSearchViewController.m */,
 				07B2828D19EFA78200CF33D7 /* SettingSearchViewController.xib */,
@@ -1061,6 +1106,9 @@
 				07B2827919EF900B00CF33D7 /* HomeDetailViewController.h */,
 				07B2827A19EF900B00CF33D7 /* HomeDetailViewController.m */,
 				07B2827B19EF900B00CF33D7 /* HomeDetailViewController.xib */,
+				0711DED619F4F8410027C4FE /* HomeHouseListViewController.h */,
+				0711DED719F4F8410027C4FE /* HomeHouseListViewController.m */,
+				0711DED819F4F8410027C4FE /* HomeHouseListViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1068,6 +1116,7 @@
 		D018B6691989EE9C0056AF32 /* APP */ = {
 			isa = PBXGroup;
 			children = (
+				0711DEDB19F510730027C4FE /* AppDelegate.m */,
 				07D1193819ECEE6E002A4808 /* Images.xcassets */,
 				D018B7891989F1090056AF32 /* Components */,
 				D018B6981989EECD0056AF32 /* Resources */,
@@ -1081,7 +1130,6 @@
 				D018B79E198A2A3D0056AF32 /* Service.m */,
 				D018B79C1989F1A90056AF32 /* Config.h */,
 				D018B7991989F15E0056AF32 /* AppDelegate.h */,
-				D018B79A1989F15E0056AF32 /* AppDelegate.m */,
 				07D1193519ECEDFF002A4808 /* Zhuangshi-Info.plist */,
 				07D1193619ECEDFF002A4808 /* Zhuangshi-Prefix.pch */,
 				D018B66A1989EE9C0056AF32 /* Base.xcdatamodeld */,
@@ -1092,6 +1140,18 @@
 		D018B66C1989EE9C0056AF32 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0711DEDD19F511480027C4FE /* Ediitheader.xib */,
+				0711DEDE19F511480027C4FE /* EditheaderCell.h */,
+				0711DEDF19F511480027C4FE /* EditheaderCell.m */,
+				0711DEE019F511480027C4FE /* Savebtton.h */,
+				0711DEE119F511480027C4FE /* Savebtton.m */,
+				0711DEE219F511480027C4FE /* Savebtton.xib */,
+				0711DEE319F511480027C4FE /* SettingView.h */,
+				0711DEE419F511480027C4FE /* SettingView.m */,
+				0711DEE519F511480027C4FE /* SettingView.xib */,
+				0711DEE619F511480027C4FE /* UserViewCell.h */,
+				0711DEE719F511480027C4FE /* UserViewCell.m */,
+				0711DEE819F511480027C4FE /* UserViewCell.xib */,
 				C9B259D119F4956B00691E8B /* ExtendViewCell.h */,
 				C9B259D219F4956B00691E8B /* ExtendViewCell.m */,
 				C9B259D319F4956B00691E8B /* ExtendViewCell.xib */,
@@ -1154,6 +1214,7 @@
 		D018B6871989EE9C0056AF32 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0711DEF919F511AC0027C4FE /* User */,
 				07B2828A19EFA58500CF33D7 /* Setting */,
 				07B2827319EF8FCE00CF33D7 /* Learn */,
 				A34C548519C0369100C0F5EC /* Effect */,
@@ -1486,6 +1547,7 @@
 				A3D4311719BEFB6900B09617 /* checked.png in Resources */,
 				A34C549319C0473C00C0F5EC /* EffectCell.xib in Resources */,
 				07D118FF19ECED02002A4808 /* EntityTemplate in Resources */,
+				0711DEEC19F511480027C4FE /* Savebtton.xib in Resources */,
 				A3D4315819BEFB6900B09617 /* img_getcode_inputbox@2x.png in Resources */,
 				A3D4315B19BEFB6900B09617 /* img_icon_personal.png in Resources */,
 				07D1190E19ECED02002A4808 /* refresh@2x.png in Resources */,
@@ -1517,6 +1579,7 @@
 				07D1190C19ECED02002A4808 /* dot@2x.png in Resources */,
 				A3D4315419BEFB6900B09617 /* img_edit_data_photo@2x.png in Resources */,
 				07D118F219ECED02002A4808 /* UITableView+loadView.templat in Resources */,
+				0711DEE919F511480027C4FE /* Ediitheader.xib in Resources */,
 				A3D4311919BEFB6900B09617 /* img_arrow_pages.png in Resources */,
 				A3D4317619BEFB6900B09617 /* img_study_three@2x.png in Resources */,
 				A3D4314E19BEFB6900B09617 /* img_building_photo@2x.png in Resources */,
@@ -1541,6 +1604,7 @@
 				A3D4317519BEFB6900B09617 /* img_study_three.png in Resources */,
 				A3D4312419BEFB6900B09617 /* img_bg_function@2x.png in Resources */,
 				C9B259E019F4956B00691E8B /* KKContactCell.xib in Resources */,
+				0711DEF519F511740027C4FE /* SettingViewController.xib in Resources */,
 				A3D4313519BEFB6900B09617 /* img_btn_forall.png in Resources */,
 				A3D4313C19BEFB6900B09617 /* img_btn_mine_selected@2x.png in Resources */,
 				07D1190819ECED02002A4808 /* color_black@2x.png in Resources */,
@@ -1588,13 +1652,16 @@
 				07B2828F19EFA78200CF33D7 /* SettingSearchViewController.xib in Resources */,
 				A3D4313219BEFB6900B09617 /* img_btn_findmyhome_selected@2x.png in Resources */,
 				A3D4317119BEFB6900B09617 /* img_study_four.png in Resources */,
+				0711DEDA19F4F8410027C4FE /* HomeHouseListViewController.xib in Resources */,
 				A3D4315F19BEFB6900B09617 /* img_mainpage_photo.png in Resources */,
 				A34C548A19C036A800C0F5EC /* EffectViewController.xib in Resources */,
 				A3F02CA119BFFA5400679631 /* HomeCityViewController.xib in Resources */,
 				A3D4313719BEFB6900B09617 /* img_btn_getcode_unusable.png in Resources */,
 				07B2829419EFA8F300CF33D7 /* SettingSearchClearCell.xib in Resources */,
+				0711DEEE19F511480027C4FE /* SettingView.xib in Resources */,
 				A3D4312019BEFB6900B09617 /* img_bg_findmyhome_search@2x.png in Resources */,
 				07D1190D19ECED02002A4808 /* img_pic_bg@2x.png in Resources */,
+				0711DEF019F511480027C4FE /* UserViewCell.xib in Resources */,
 				A3D4315619BEFB6900B09617 /* img_edit_data_situation@2x.png in Resources */,
 				A3D4315D19BEFB6900B09617 /* img_icon_search.png in Resources */,
 				A3D4314819BEFB6900B09617 /* img_btn_study_selected@2x.png in Resources */,
@@ -1661,6 +1728,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0711DED919F4F8410027C4FE /* HomeHouseListViewController.m in Sources */,
 				D018B6951989EE9C0056AF32 /* ShareHandle.m in Sources */,
 				07D1192819ECED02002A4808 /* SDWebImageDownloaderOperation.m in Sources */,
 				C9B259E119F4956B00691E8B /* LearnCatCell.m in Sources */,
@@ -1671,7 +1739,6 @@
 				07D118DB19ECED02002A4808 /* CGTableViewCell.m in Sources */,
 				07D118F719ECED02002A4808 /* CropView.m in Sources */,
 				07B2829219EFA8E400CF33D7 /* SettingSearchClearCell.m in Sources */,
-				D018B79B1989F15E0056AF32 /* AppDelegate.m in Sources */,
 				07D118E219ECED02002A4808 /* CGCollectionViewLayout.m in Sources */,
 				07D118F819ECED02002A4808 /* VideoView.m in Sources */,
 				07D118EF19ECED02002A4808 /* TiledPDFView.m in Sources */,
@@ -1681,12 +1748,14 @@
 				A3C37BCD19BF05DF00BD7ACC /* EntityHomeSlide.m in Sources */,
 				07B2828819EF961000CF33D7 /* HomeDetailImagesCell.m in Sources */,
 				07D118EE19ECED02002A4808 /* PDFScrollView.m in Sources */,
+				0711DEDC19F510730027C4FE /* AppDelegate.m in Sources */,
 				07B2828919EF962300CF33D7 /* HomeDetailViewController.m in Sources */,
 				07D1192919ECED02002A4808 /* SDWebImageManager.m in Sources */,
 				07D118DA19ECED02002A4808 /* CGCollectionViewCell.m in Sources */,
 				07D118E619ECED02002A4808 /* CGScrollView.m in Sources */,
 				D018B79F198A2A3D0056AF32 /* Service.m in Sources */,
 				D018B68F1989EE9C0056AF32 /* Entity.m in Sources */,
+				0711DEEF19F511480027C4FE /* UserViewCell.m in Sources */,
 				07D1190419ECED02002A4808 /* CGAreaBook.m in Sources */,
 				07B2828019EF908500CF33D7 /* HomeDetailInfo.m in Sources */,
 				07D1191F19ECED02002A4808 /* Form.m in Sources */,
@@ -1695,8 +1764,10 @@
 				07D118EC19ECED02002A4808 /* CGScrollViewShow.m in Sources */,
 				07D1193019ECED02002A4808 /* UIImageView+WebCache.m in Sources */,
 				07D118ED19ECED02002A4808 /* CGScrollViewShowGetSelected.m in Sources */,
+				0711DEF819F511830027C4FE /* testTableViewController.m in Sources */,
 				07D118F619ECED02002A4808 /* CGViewWithTableVIew.m in Sources */,
 				07D118E719ECED02002A4808 /* CGTableView.m in Sources */,
+				0711DEED19F511480027C4FE /* SettingView.m in Sources */,
 				07D118E519ECED02002A4808 /* CGPickerView.m in Sources */,
 				07D1190519ECED02002A4808 /* CGDataResult.m in Sources */,
 				07D1192519ECED02002A4808 /* SDWebImageCompat.m in Sources */,
@@ -1705,6 +1776,7 @@
 				07D118D819ECED02002A4808 /* CGDelegate.m in Sources */,
 				A34C549619C054C100C0F5EC /* EntityEffect.m in Sources */,
 				07D118FD19ECED02002A4808 /* EntityItem.m in Sources */,
+				0711DEF419F511740027C4FE /* SettingViewController.m in Sources */,
 				07D118F019ECED02002A4808 /* CGTableView+loadView.m in Sources */,
 				07D118F519ECED02002A4808 /* CGViewWithCollectionVIew.m in Sources */,
 				07D1192F19ECED02002A4808 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1718,6 +1790,7 @@
 				07D118EB19ECED02002A4808 /* CGALabelInsets.m in Sources */,
 				07D118E819ECED02002A4808 /* CGTextField.m in Sources */,
 				07D1193319ECED02002A4808 /* XMLReader.m in Sources */,
+				0711DEEA19F511480027C4FE /* EditheaderCell.m in Sources */,
 				D018B7971989F1090056AF32 /* WSGButtonRadius2.m in Sources */,
 				07D1192719ECED02002A4808 /* SDWebImageDownloader.m in Sources */,
 				07D118E919ECED02002A4808 /* CGView.m in Sources */,
@@ -1734,6 +1807,7 @@
 				07D118E419ECED02002A4808 /* CGLabel.m in Sources */,
 				A34C548219C01CFD00C0F5EC /* HomeCityCell.m in Sources */,
 				A3C37BC419BF031900BD7ACC /* HomeViewController.m in Sources */,
+				0711DEEB19F511480027C4FE /* Savebtton.m in Sources */,
 				A3C37BC919BF041700BD7ACC /* HomeSliderCell.m in Sources */,
 				07D118FE19ECED02002A4808 /* EntityObject.m in Sources */,
 				07D1192A19ECED02002A4808 /* SDWebImagePrefetcher.m in Sources */,
