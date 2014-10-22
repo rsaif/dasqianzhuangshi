@@ -11,8 +11,7 @@
 @implementation ExtendViewCell
 -(void)layoutSubviews
 {
-    self.listbutton.backgroundColor = [UIColor redColor];
-}
+   }
 
 -(IBAction)button:(id)sender
 {

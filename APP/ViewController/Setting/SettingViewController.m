@@ -7,8 +7,8 @@
 //
 
 #import "SettingViewController.h"
-#import "Exitchu.h"
-#import "SettingView.h"
+#import "SettingCell.h"
+#import "SettingexitCell.h"
 @interface SettingViewController ()
 
 @end
@@ -54,7 +54,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
 {
-    return 20;
+    return 15;
 }
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -69,16 +69,23 @@
     if (section == 0) {
         return 0;
     }
+    if (section == 1) {
+         return 40;
+    }
     
         
-    return 30;
+    return 0;
 }
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UIView *aView = [[UIView alloc]init];
+    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0,35,320,30)];
     if (section == 1) {
-        Exitchu *chu = CreateCell(@"Exitchu");
-        [aView addSubview:chu];
+        
+        SettingexitCell *cell = CreateCell(@"SettingexitCell");
+       
+        [aView addSubview:cell];
+       /* Exitchu *chu = CreateCell(@"Exitchu");
+        [aView addSubview:chu];*/
     }
       return aView;
 }
@@ -86,7 +93,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SettingView *Cell = CreateCell(@"SettingView");
+    SettingCell *Cell = CreateCell(@"SettingCell");
     if (indexPath.section == 0&&indexPath.row == 0) {
         Cell.mingzilabl.text = @"意见反馈";
            }

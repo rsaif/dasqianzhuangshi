@@ -55,7 +55,7 @@
     [thirdNavigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]}];
     
     
-    ViewControllerImpl *fourthViewController = CreateViewController(@"SettingViewController");
+    ViewControllerImpl *fourthViewController = CreateViewController(@"DrawViewingViewController");
     fourthViewController.title = @"我的";
     fourthViewController.tabBarItem.image = [UIImage imageNamed:@"img_btn_mine"];
     UINavigationController *fourthNavigationController = [[UINavigationController alloc]
@@ -76,8 +76,8 @@
     
     nav.navigationBar.hidden = YES;
     
-    [SlideNavigationController sharedInstance].leftMenu = CreateViewControllerWithNav(@"HomeCityViewController");
-    [(UINavigationController *)[SlideNavigationController sharedInstance].leftMenu setNavigationBarHidden:YES];
+    [SlideNavigationController sharedInstance].rightMenu = CreateViewControllerWithNav(@"HomeCityViewController");
+    [(UINavigationController *)[SlideNavigationController sharedInstance].rightMenu setNavigationBarHidden:YES];
     self.window.rootViewController = nav;
     
 }

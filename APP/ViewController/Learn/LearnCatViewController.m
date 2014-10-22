@@ -7,9 +7,10 @@
 //
 
 #import "LearnCatViewController.h"
-#import "LearnCatCell.h"
+#import "LearnCatheaderCell.h"
+
 #import "ExtendViewCell.h"
-#import "PlaceAddressCell.h"
+#import "LearnCateditCell.h"
 #import "KKContactCell.h"
 
 @interface LearnCatViewController ()
@@ -73,15 +74,15 @@
        
         static NSString *CellIdentifier = @"PlaceAddressCell";
         
-        PlaceAddressCell *cell=(PlaceAddressCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        LearnCateditCell *cell=(LearnCateditCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if(cell==nil)
         {
-            NSArray *nibs=[[NSBundle mainBundle] loadNibNamed:@"PlaceAddressCell" owner:self options:nil];
+            NSArray *nibs=[[NSBundle mainBundle] loadNibNamed:@"LearnCateditCell" owner:self options:nil];
             for(id oneObject in nibs)
             {
-                if([oneObject isKindOfClass:[PlaceAddressCell class]])
+                if([oneObject isKindOfClass:[LearnCateditCell class]])
                 {
-                    cell = (PlaceAddressCell *)oneObject;
+                    cell = (LearnCateditCell *)oneObject;
                 }
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -130,9 +131,9 @@
     [mView setBackgroundColor:[UIColor whiteColor]];
     
     UIImageView *logoView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 90, 90)];
+   LearnCatheaderCell *cell = CreateCell(@"LearnCatheaderCell");
     
-    
-    LearnCatCell *cell  = CreateCell(@"LearnCatCell");
+   
     //[logoView setImage:[UIImage imageNamed:[_array objectAtIndex:section]]];
     cell.imgStudy.image = [UIImage imageNamed:[_array objectAtIndex:section]];
     
