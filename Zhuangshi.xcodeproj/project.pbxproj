@@ -108,7 +108,6 @@
 		07D1193219ECED02002A4808 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D118D119ECED02002A4808 /* Soap.m */; };
 		07D1193319ECED02002A4808 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D118D419ECED02002A4808 /* XMLReader.m */; };
 		07D1193419ECED02002A4808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07D118D519ECED02002A4808 /* InfoPlist.strings */; };
-		07D1193719ECEDFF002A4808 /* Zhuangshi-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07D1193519ECEDFF002A4808 /* Zhuangshi-Info.plist */; };
 		07D1193919ECEE6E002A4808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D1193819ECEE6E002A4808 /* Images.xcassets */; };
 		1B5C4C0218B5F2A500ED807C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5C4C0118B5F2A500ED807C /* Foundation.framework */; };
 		1B5C4C0418B5F2A500ED807C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5C4C0318B5F2A500ED807C /* CoreGraphics.framework */; };
@@ -240,8 +239,6 @@
 		C96279C519F603410078E2CE /* EditSaveButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96279C319F603410078E2CE /* EditSaveButtonCell.xib */; };
 		C96279C919F606560078E2CE /* SettingexitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C96279C719F606560078E2CE /* SettingexitCell.m */; };
 		C96279CA19F606560078E2CE /* SettingexitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96279C819F606560078E2CE /* SettingexitCell.xib */; };
-		C96279D719F6269E0078E2CE /* FunctionShejiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96279D519F6269E0078E2CE /* FunctionShejiViewController.m */; };
-		C96279D819F6269E0078E2CE /* FunctionShejiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96279D619F6269E0078E2CE /* FunctionShejiViewController.xib */; };
 		C96279DF19F627EE0078E2CE /* FunctionLivingRoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C96279DD19F627EE0078E2CE /* FunctionLivingRoomCell.m */; };
 		C96279E019F627EE0078E2CE /* FunctionLivingRoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96279DE19F627EE0078E2CE /* FunctionLivingRoomCell.xib */; };
 		C96279EC19F638E50078E2CE /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96279EB19F638E50078E2CE /* DrawingView.m */; };
@@ -251,7 +248,6 @@
 		C96279F919F651A20078E2CE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C96279F819F651A10078E2CE /* 1.jpg */; };
 		C96279FB19F651B60078E2CE /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C96279FA19F651B60078E2CE /* 2.jpg */; };
 		C96279FD19F651BB0078E2CE /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C96279FC19F651BB0078E2CE /* 3.jpg */; };
-		C9627A0B19F65B8F0078E2CE /* CGimageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9627A0A19F65B8F0078E2CE /* CGimageView.m */; };
 		C9B259DD19F4956B00691E8B /* ExtendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259D219F4956B00691E8B /* ExtendViewCell.m */; };
 		C9B259DE19F4956B00691E8B /* ExtendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B259D319F4956B00691E8B /* ExtendViewCell.xib */; };
 		C9B259DF19F4956B00691E8B /* KKContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B259D519F4956B00691E8B /* KKContactCell.m */; };
@@ -615,9 +611,6 @@
 		C96279C619F606560078E2CE /* SettingexitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingexitCell.h; sourceTree = "<group>"; };
 		C96279C719F606560078E2CE /* SettingexitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingexitCell.m; sourceTree = "<group>"; };
 		C96279C819F606560078E2CE /* SettingexitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingexitCell.xib; sourceTree = "<group>"; };
-		C96279D419F6269E0078E2CE /* FunctionShejiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionShejiViewController.h; path = ../../../../../Documents/FunctionShejiViewController.h; sourceTree = "<group>"; };
-		C96279D519F6269E0078E2CE /* FunctionShejiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionShejiViewController.m; path = ../../../../../Documents/FunctionShejiViewController.m; sourceTree = "<group>"; };
-		C96279D619F6269E0078E2CE /* FunctionShejiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FunctionShejiViewController.xib; path = ../../../../../Documents/FunctionShejiViewController.xib; sourceTree = "<group>"; };
 		C96279DC19F627EE0078E2CE /* FunctionLivingRoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionLivingRoomCell.h; sourceTree = "<group>"; };
 		C96279DD19F627EE0078E2CE /* FunctionLivingRoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionLivingRoomCell.m; sourceTree = "<group>"; };
 		C96279DE19F627EE0078E2CE /* FunctionLivingRoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionLivingRoomCell.xib; sourceTree = "<group>"; };
@@ -630,8 +623,6 @@
 		C96279F819F651A10078E2CE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../1.jpg; sourceTree = "<group>"; };
 		C96279FA19F651B60078E2CE /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		C96279FC19F651BB0078E2CE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		C9627A0919F65B8F0078E2CE /* CGimageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGimageView.h; sourceTree = "<group>"; };
-		C9627A0A19F65B8F0078E2CE /* CGimageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGimageView.m; sourceTree = "<group>"; };
 		C9B259D119F4956B00691E8B /* ExtendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendViewCell.h; sourceTree = "<group>"; };
 		C9B259D219F4956B00691E8B /* ExtendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendViewCell.m; sourceTree = "<group>"; };
 		C9B259D319F4956B00691E8B /* ExtendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtendViewCell.xib; sourceTree = "<group>"; };
@@ -1146,9 +1137,6 @@
 		C96279CB19F625670078E2CE /* Function */ = {
 			isa = PBXGroup;
 			children = (
-				C96279D419F6269E0078E2CE /* FunctionShejiViewController.h */,
-				C96279D519F6269E0078E2CE /* FunctionShejiViewController.m */,
-				C96279D619F6269E0078E2CE /* FunctionShejiViewController.xib */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -1164,8 +1152,6 @@
 		C9627A0519F65AEC0078E2CE /* imageView */ = {
 			isa = PBXGroup;
 			children = (
-				C9627A0919F65B8F0078E2CE /* CGimageView.h */,
-				C9627A0A19F65B8F0078E2CE /* CGimageView.m */,
 			);
 			name = imageView;
 			path = ../../../../Desktop/imageView;
@@ -1574,7 +1560,7 @@
 		1B5C4BF618B5F2A500ED807C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "wang shuguan";
 				TargetAttributes = {
 					1B5C4BFD18B5F2A500ED807C = {
@@ -1710,8 +1696,6 @@
 				A3D4313B19BEFB6900B09617 /* img_btn_mine_selected.png in Resources */,
 				A3D4316619BEFB6900B09617 /* img_photo_list_photo@2x.png in Resources */,
 				A3D4316A19BEFB6900B09617 /* img_photo@2x.png in Resources */,
-				07D1193719ECEDFF002A4808 /* Zhuangshi-Info.plist in Resources */,
-				C96279D819F6269E0078E2CE /* FunctionShejiViewController.xib in Resources */,
 				A3D4316419BEFB6900B09617 /* img_masking_display_top@2x.png in Resources */,
 				A3D4313019BEFB6900B09617 /* img_btn_findmyhome_enter@2x.png in Resources */,
 				A3D4314A19BEFB6900B09617 /* img_btn_study@2x.png in Resources */,
@@ -1833,7 +1817,6 @@
 				C96279EC19F638E50078E2CE /* DrawingView.m in Sources */,
 				0711DEDC19F510730027C4FE /* AppDelegate.m in Sources */,
 				07B2828919EF962300CF33D7 /* HomeDetailViewController.m in Sources */,
-				C9627A0B19F65B8F0078E2CE /* CGimageView.m in Sources */,
 				07D1192919ECED02002A4808 /* SDWebImageManager.m in Sources */,
 				07D118DA19ECED02002A4808 /* CGCollectionViewCell.m in Sources */,
 				07D118E619ECED02002A4808 /* CGScrollView.m in Sources */,
@@ -1853,7 +1836,6 @@
 				07D118E719ECED02002A4808 /* CGTableView.m in Sources */,
 				0711DEED19F511480027C4FE /* SettingCell.m in Sources */,
 				07D118E519ECED02002A4808 /* CGPickerView.m in Sources */,
-				C96279D719F6269E0078E2CE /* FunctionShejiViewController.m in Sources */,
 				07D1190519ECED02002A4808 /* CGDataResult.m in Sources */,
 				07D1192519ECED02002A4808 /* SDWebImageCompat.m in Sources */,
 				07D118F319ECED02002A4808 /* CGNothingView.m in Sources */,

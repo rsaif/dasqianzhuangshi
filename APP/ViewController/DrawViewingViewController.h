@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CGimageView.h"
 @interface DrawViewingViewController : UIViewController<UIScrollViewDelegate>
 {
     __weak IBOutlet UIScrollView *_scrollview;
