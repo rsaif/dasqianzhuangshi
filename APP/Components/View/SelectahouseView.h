@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrawingView : UIView<UIScrollViewDelegate>
+@interface SelectahouseView : UIView<UITableViewDelegate,UITableViewDataSource>
 {
-   __weak IBOutlet UIScrollView *_scrollview;
+  
+    
+    __weak IBOutlet UITableView *_selectableView;
     
 }
 
