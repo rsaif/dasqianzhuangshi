@@ -8,7 +8,6 @@
 
 #import "DrawViewingViewController.h"
 
-
 @interface DrawViewingViewController ()
 
 @end

@@ -20,6 +20,7 @@
             _imgView.image = image;
             CGRect frame = _imgView.frame;
             frame.size.width = 100;
+            //等比例的缩放
             frame.size.height = image.size.height*_imgView.frame.size.width/image.size.width;
             _imgView.frame = frame;
             e.width = [NSString stringWithFormat:@"%f",frame.size.width];

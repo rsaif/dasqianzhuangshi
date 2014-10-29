@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SelectdifangCell : UITableViewCell
+{
+}
+@property(nonatomic,weak)IBOutlet UILabel *loulabel;
+@property(nonatomic,weak)IBOutlet UILabel *hulabel;
+@property(nonatomic,weak)IBOutlet UILabel *stylelabel;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import "ZHfangdaSCrollview.h"
 @interface DrawViewingViewController : UIViewController<UIScrollViewDelegate>
 {
     __weak IBOutlet UIScrollView *_scrollview;
@@ -23,5 +25,5 @@
 }
 @property(nonatomic,weak)IBOutlet UILabel *qiezilabel;
 @property(nonatomic,weak)IBOutlet UILabel *mingzilabel;
-
+@property(nonatomic,weak)IBOutlet ZHfangdaSCrollview *zoomScrollView;
 @end

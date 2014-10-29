@@ -9,7 +9,7 @@
 #import "ResigerViewController.h"
 #import "RegiserCell.h"
 #import "EntrybuttonCell.h"
-#import "SelectahouseView.h"
+
 @interface ResigerViewController ()
 
 @end
@@ -21,10 +21,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        SelectahouseView *aView = [[SelectahouseView alloc] initWithFrame:self.view.frame];
-        aView.backgroundColor = [UIColor redColor];
-        [self.view addSubview:aView];
-        [self.view bringSubviewToFront:aView];
         
         self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _resitable.delegate = self;
