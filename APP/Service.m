@@ -319,7 +319,7 @@
 
     
 }
--(CGDataResult*)effectdetailzhanshi
+-(CGDataResult*)effectdetailzhanshi:(NSString*)artile withTop:(NSString*)top
 {
     self.request.timeOutSeconds = 10;
     
@@ -327,34 +327,16 @@
     
     
     
-    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"10"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"article":artile,@"top":top} options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
     
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
         return [CGDataResult getResultFromDic:dic className:
-                @"Entityeffectsousuo"];
+                @"EntitydetailZhangshi"];
         
     }];
 
-}
--(CGDataResult*)userUpdates
-{
-    self.request.timeOutSeconds = 10;
-    
-    NSString *methadName =@"get_xgt_show";
-    
-    
-    
-    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"10"} options:0 error:nil] encoding:NSUTF8StringEncoding];
-    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
-    
-    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
-        
-        return [CGDataResult getResultFromDic:dic className:
-                @"Entityeffectsousuo"];
-        
-    }];
 }
 -(CGDataResult*)userloginWithname:(NSString*)name withPass:(NSString*)pass
 {

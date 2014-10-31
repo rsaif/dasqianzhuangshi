@@ -9,6 +9,7 @@
 #import "EntryViewController.h"
 #import "EntryuserCell.h"
 #import "EntrybuttonCell.h"
+#import "ResigerViewController.h"
 @interface EntryViewController ()
 
 @end
@@ -36,11 +37,23 @@
 {
     [super viewDidLoad];
     
-    
+      self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(zhuceanniu)];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
     
    
         // Do any additional setup after loading the view from its nib.
 }
+#pragma UInaangitem  metheds
+-(void)zhuceanniu{
+    
+   
+
+    
+    [self.navigationController pushViewController:CreateViewController(@"ResigerViewController") animated:YES];
+}
+
+#pragma UItableViedelete and UITabledataSource
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 50;

@@ -9,5 +9,12 @@
 #import "EntityObject.h"
 
 @interface EntitydetailZhangshi : EntityObject
+{
+}
+@property(nonatomic,strong)NSString *Sum;
+@property(nonatomic,strong)NSString *Id;
+@property(nonatomic,strong)NSString *Arrtile_id;
+@property(nonatomic,strong)NSString *Thumb_path;
+@property(nonatomic,strong)NSString *Original_path;
 
 @end

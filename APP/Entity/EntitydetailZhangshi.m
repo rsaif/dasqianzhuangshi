@@ -9,5 +9,14 @@
 #import "EntitydetailZhangshi.h"
 
 @implementation EntitydetailZhangshi
-
-@end
++(EntityObject *)getObjectFromDic:(NSDictionary *)dic
+{
+    EntitydetailZhangshi *r = [[EntitydetailZhangshi new] Init];
+    r.Sum = [dic objectForKey:@"sum"];
+    r.Id = [dic objectForKey:@"id"];
+    r.Arrtile_id = [dic objectForKey:@"article_id"];
+    r.Thumb_path = [dic objectForKey:@"thumb_path"];
+    r.Original_path = [dic objectForKey:@"original_path"];
+    return r;
+}
+    @end

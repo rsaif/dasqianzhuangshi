@@ -27,7 +27,7 @@
 //效果图检索获取
 -(CGDataResult*)effectSousuo;
 //效果图详情展示
--(CGDataResult*)effectdetailzhanshi;
+-(CGDataResult*)effectdetailzhanshi:(NSString*)artile withTop:(NSString*)top;
 //学装修滑动页
 -(CGDataResult*)learnscrollview;
 
@@ -51,7 +51,8 @@
 -(CGDataResult*)userUpdates:(NSString*)userId withpass:(NSString*)userpass withNewpass:(NSString*)xinpass;
 
 //用户数据更新资料
--(CGDataResult*)userUpdateinformation;
+-(CGDataResult*)userUpdateinformation:(NSString*)usename withQq:(NSString*)tengxun withNickname:(NSString*)nicheng withAddress:(NSString*)adress;
+
 //用户登录；
 -(CGDataResult*)userloginWithname:(NSString*)name withPass:(NSString*)pass;
 //用户注册；
