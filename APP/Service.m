@@ -12,86 +12,449 @@
 #import <CoreData+MagicalRecord.h>
 @implementation Service
 
--(CGDataResult *)getData{
-//    [Entity MR_findAllInContext:[NSManagedObjectContext MR_contextForCurrentThread]];
-    //sync coredata
-//    NSArray *arr = [EntityItem syncToArrayWithCoreData];
-//    [EntityItem syncToCoreDataWithArray:arr primaryKey:@"cid"];
-    
-    //search
-//    NSArray *fetchedObjects = [Entity MR_findAll];
-//    NSArray *newArr = [fetchedObjects sortedArrayUsingComparator:^NSComparisonResult(Entity * obj1, Entity * obj2) {
-//        return [obj2.objectID.URIRepresentation.absoluteString compare:obj1.objectID.URIRepresentation.absoluteString];
-//    }];
-//    for (Entity *e in newArr) {
-//        NSLog(@"--%@",e.name);
-//        NSLog(@"--%@",e.cid);
-//        NSLog(@"--%@",e.objectID);
-//    }
-    
-    
-    //save
-//    NSError *error;
-//    
-//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-//        Entity *e = [Entity MR_createInContext:localContext];
-//        e.name = @"name";
-//        e.cid = @"cid";
-//        e.cid = e.objectID.URIRepresentation.absoluteString;
-//    }];
-//    
-//    if (error) URLLog(@"%@",error);
-    
-    
-    //edit
-//    NSError *error;
-//    
-//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-//        NSArray *fetchedObjects = [Entity MR_findAllInContext:localContext];
-//        for (Entity *e in fetchedObjects) {
-//            e.cid = @"cid1";
-//        }
-//    }];
-//    
-//    if (error) URLLog(@"%@",error);
-    
-    
-    //del
-//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext){
-//        NSArray *fetchedObjects = [Entity MR_findAllInContext:localContext];
-//        for (Entity *e in fetchedObjects) {
-//            [e MR_deleteInContext:localContext];
-//        }
-//    }];
-    
 
-    /**
-     *  排序
-     
-     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Entity"];
-     [request setFetchLimit:10];
-     [request setFetchOffset:20];
-     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES];
-     [request setSortDescriptors:@[sortDescriptor]];
-     NSArray *fetchedObjects = [Entity MR_executeFetchRequest:request inContext:[NSManagedObjectContext MR_defaultContext]];
-     NSArray *newArr = [fetchedObjects sortedArrayUsingComparator:^NSComparisonResult(Entity * obj1, Entity * obj2) {
-     return [obj2.objectID.URIRepresentation.absoluteString compare:obj1.objectID.URIRepresentation.absoluteString];
-     }];
-     for (Entity *e in newArr) {
-     NSLog(@"--%@",e.name);
-     NSLog(@"--%@",e.cid);
-     NSLog(@"--%@",e.objectID);
-     }
-     
-     */
+-(CGDataResult*)homeSlider
+
+{
+   
     
     self.request.timeOutSeconds = 10;
+   
+    NSString *methadName =@"findhouse_indexlist";
     
-    NSString   *url = [NSString stringWithFormat:@"http://a1408.g.akamai.net/5/1408/1388/2005110403/1a1a1ad948be278cff2d96046ad90768d848b41947aa1986/sample_iPod.m4v.zip"];
+    NSString *four = [NSString stringWithFormat:@"%d",4];
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"sum":four} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
     
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+      
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntityHomeSlide"];
+       
+    }];
+}
+
+-(CGDataResult*)homelist
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_goodslist";
+    
+  
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"10"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntityHomelist"];
+        
+    }];
+
+}
+-(CGDataResult*)homebuliding
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_category";
+    
+   
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"goods":@"goods"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntiyHomebuliding"];
+        
+    }];
+
+}
+
+
+-(CGDataResult*)effect
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_li";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entityeffectguo"];
+        
+    }];
+
+}
+-(CGDataResult*)learnscrollview
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xzx_index";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"sum":@"3"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entitylearnshow"];
+        
+    }];
+
+}
+-(CGDataResult*)learntablelist
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"xzx_indexlist";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"2"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entitylearnlisttable"];
+        
+    }];
+
+}
+-(CGDataResult*)learnphoto
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xzx_category";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"photo":@"photo"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entitylearnphoto"];
+        
+    }];
+
+}
+-(CGDataResult*)designerMessage
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_person_show";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"article":@"7200"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntitydesigerMessage"];
+        
+    }];
+}
+-(CGDataResult*)designerlist
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_person_list";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"2",} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entitydesigner"];
+        
+    }];
+    
+}
+-(CGDataResult*)diagramdetail
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_hx_list";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3",@"article":@"7175"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entitydigarmdetail"];
+        
+    }];
+}
+-(CGDataResult*)Villagefloor
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_album_list";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3",@"article":@"7175"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntitiyVillageFloor"];
+        
+    }];
+ 
+}
+-(CGDataResult*)VillagefloorModel
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_ybj_list";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3",@"article":@"7175"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntityVillageFloorModel"];
+        
+    }];
+
+}
+-(CGDataResult*)Villagesgtlist
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_list";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3",@"article":@"7175"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntityVillageFloorModel"];
+        
+    }];
+}
+-(CGDataResult*)effectCategory
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_category";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"xiaoguotu":@"xiaoguotu"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"EntityVillageFloorModel"];
+        
+    }];
+}
+-(CGDataResult*)effectHomege
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_li";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entityeffecthomepage"];
+        
+    }];
+    
+}
+-(CGDataResult*)effectSousuo
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"index_xgt_list";
+    
+   
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"143",@"keyword":@"",@"order":@"",@"pager":@"1",@"pagesize":@"10",@"apartment":@"一居",} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entityeffectsousuo"];
+        
+    }];
+
+    
+}
+-(CGDataResult*)effectdetailzhanshi
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_show";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"10"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entityeffectsousuo"];
+        
+    }];
+
+}
+-(CGDataResult*)userUpdates
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"get_xgt_show";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"category_id":@"",@"keyword":@"",@"order":@"",@"page":@"1",@"pagesize":@"10"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic className:
+                @"Entityeffectsousuo"];
+        
+    }];
+}
+-(CGDataResult*)userloginWithname:(NSString*)name withPass:(NSString*)pass
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"user_login";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"user_name":name,@"user_pass":pass} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
         return [CGDataResult getResultFromDic:dic];
     }];
+
+}
+-(CGDataResult*)useregisterWithname:(NSString*)name withPassword:(NSString*)password
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"user_register";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"username":name,@"password":password} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic];
+    }];
+
+}
+-(CGDataResult*)mobileWithname:(NSString*)mobile
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"user_register";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"mobile":mobile} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic];
+    }];
+}
+
+-(CGDataResult*)extistable:(NSString*)phone
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"exists_mobile";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"phone":phone} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic];
+    }];
+}
+-(CGDataResult*)userUpdates:(NSString*)userId withpass:(NSString*)userpass withNewpass:(NSString*)xinpass
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"user_updatepass";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"user_id":userId,@"user_pass":userpass,@"new_pass":xinpass} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic];
+    }];
+}
+-(CGDataResult*)userUpdateinformation:(NSString*)usename withQq:(NSString*)tengxun withNickname:(NSString*)nicheng withAddress:(NSString*)adress
+{
+    self.request.timeOutSeconds = 10;
+    
+    NSString *methadName =@"user_upuserinformation";
+    
+    
+    
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"user_name":usename,@"nick_name":nicheng,@"qq":tengxun,@"address":adress} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+    
+    return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
+        
+        return [CGDataResult getResultFromDic:dic];
+    }];
+
 }
 //本地化操作
 //+(NSArray *)getGoodsFromLocal{

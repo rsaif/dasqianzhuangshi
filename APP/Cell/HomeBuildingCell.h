@@ -9,5 +9,11 @@
 #import "CGTableViewCell.h"
 
 @interface HomeBuildingCell : CGTableViewCell
+{
+}
+@property(nonatomic,weak)IBOutlet UILabel *title;
+@property(nonatomic,weak)IBOutlet UILabel *subtitle;
+@property(nonatomic,weak)IBOutlet UIImageView *backimageView;
+@property(nonatomic,strong)NSArray *array;
 
 @end

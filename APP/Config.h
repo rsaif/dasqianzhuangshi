@@ -15,7 +15,9 @@
 #define HOSTDOMAIN @"192.168.2.52"
 #define WEBSEARVICE  [NSString stringWithFormat:@"http://%@:8060/WebService.asmx",HOSTDOMAIN]
 
-#define LOADCOUNT @10
+#define ZWEBSEARCE  @"http://121.42.15.32:81/MethodIn.asmx"
+
+
 
 //设置初始化字体大小
 #define FirstFontSize [UIFont systemFontOfSize:20.0f]
@@ -28,7 +30,7 @@
 #define API_STATUS @"success"
 #define API_CONTENT @"result"
 //#define API_CONTENTS @[@"result",@"service",@"goods",@"order"]//是否包含多个结果字段名
-#define API_MSG @"msg"
+#define API_MSG @"message"
 #define API_STR_ERROR @"false"
 #define API_STR_TRUE @"true"
 

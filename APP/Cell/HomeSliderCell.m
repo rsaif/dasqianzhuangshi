@@ -33,7 +33,8 @@
     int i=0;
     for (EntityHomeSlide *s in dataList) {
         UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(self.frame.size.width*i++, 0, self.frame.size.width, self.frame.size.height)];
-        [img setImageWithURL:[NSURL URLWithString:s.Img] placeholderImage:DefaultImage];
+        [img sd_setImageWithURL:[NSURL URLWithString:s.alt] placeholderImage:DefaultImage];
+       
         [_scrollView addSubview:img];
     }
     _scrollView.contentSize = CGSizeMake(i*self.frame.size.width, self.frame.size.height);

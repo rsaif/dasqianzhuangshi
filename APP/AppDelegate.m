@@ -46,7 +46,7 @@
     
     
     
-    ViewControllerImpl *thirdViewController = CreateViewController(@"LearnCatViewController");
+    ViewControllerImpl *thirdViewController = CreateViewController(@"LearnShowViewController");
     thirdViewController.title = @"学装修";
     thirdViewController.tabBarItem.image = [UIImage imageNamed:@"img_btn_study"];
     UINavigationController *thirdNavigationController = [[UINavigationController alloc]

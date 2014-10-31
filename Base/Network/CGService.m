@@ -11,8 +11,8 @@
 
 @implementation CGService
 -(CGDataResult  *)loadNetworkDataWithUrl:(NSString *)_url complete:(CGDataResult*(^)(NSData * data,NSString * str,NSMutableDictionary* dic))complete{
-    NSLog(@"%@",[_url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
-    NSString *url = [_url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@",_url);
+    NSString *url = _url;
     if ([self.request isKindOfClass:[ASIFormDataRequest class]]) {
         self.request.requestMethod = @"POST";
         NSArray *urls = [url componentsSeparatedByString:@"?"];
