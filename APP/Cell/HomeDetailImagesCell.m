@@ -7,6 +7,8 @@
 //
 
 #import "HomeDetailImagesCell.h"
+#import "EntitiyVillageFloor.h"
+#import "UIImageView+WebCache.h"
 
 @implementation HomeDetailImagesCell
 
@@ -17,5 +19,13 @@
     // Drawing code
 }
 */
+-(void)setData:(NSArray*)data
+{
+    for (EntitiyVillageFloor *s in data) {
+        UIImageView *bacimageView = [[UIImageView alloc] initWithFrame:CGRectMake(0*[data count]/320+5, 0,30 ,60 )];
+        [bacimageView sd_setImageWithURL:[NSURL URLWithString:s.Thumb_path] placeholderImage:DefaultImage];
+        [self.scrollview addSubview:bacimageView];
+    }
+}
 
 @end

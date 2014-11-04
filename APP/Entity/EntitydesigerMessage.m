@@ -7,6 +7,7 @@
 //
 
 #import "EntitydesigerMessage.h"
+#import "EntitydesigerMessageSun.h"
 
 @implementation EntitydesigerMessage
 +(EntityObject *)getObjectFromDic:(NSDictionary *)dic
@@ -16,10 +17,9 @@
     t.Img_url = [dic objectForKey:@"img_url"];
     t.Zy_ln = [dic objectForKey:@"zy_ln"];
     t.Zy_style = [dic objectForKey:@"zy_style"];
-    
-    t.SunArry = (NSArray*)[EntityObject getObjectFromDic:[dic objectForKey:@"sun"]];
-   
-    
+    t.sun = [dic objectForKey:@"sun"];
+    t.SunArry = [EntityObject getObjecsFromDic:t.sun];
+       
     return t;
 }
 @end

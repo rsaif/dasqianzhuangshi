@@ -8,6 +8,7 @@
 
 #import "EntityObject.h"
 #import "EntitydesigerMessageSun.h"
+
 @interface EntitydesigerMessage : EntityObject
 {
 }
@@ -16,7 +17,8 @@
 @property(nonatomic,strong)NSString *Zy_ln;
 @property(nonatomic,strong)NSString *Zy_style;
 
+
 @property(nonatomic,strong)EntitydesigerMessageSun *sun;
-@property(nonatomic,strong)NSString *SunArry;
+@property(nonatomic,strong)NSArray *SunArry;
 
 @end

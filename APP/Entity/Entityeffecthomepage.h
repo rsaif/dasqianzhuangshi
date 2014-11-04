@@ -7,8 +7,8 @@
 //
 
 #import "EntityObject.h"
-
-@interface Entityeffecthomepage : EntityObject
+#import "EntityEffect.h"
+@interface Entityeffecthomepage : EntityEffect
 @property(nonatomic,strong)NSString *Id;
 @property(nonatomic,strong)NSString *Channel_id;
 @property(nonatomic,strong)NSString *title;

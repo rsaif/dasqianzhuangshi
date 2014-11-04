@@ -22,6 +22,7 @@
                     <connections>
                         <outlet property="dataSource" destination="-1" id="cGp-zf-URd"/>
                         <outlet property="delegate" destination="-1" id="7O2-ok-wN2"/>
+                        <outlet property="loadDelegate" destination="-1" id="E1a-Qm-70Y"/>
                     </connections>
                 </tableView>
             </subviews>

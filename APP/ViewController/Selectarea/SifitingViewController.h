@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SelectarreraCell.h"
-@interface SifitingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,Selectarrerdelegate>
+#import "ViewControllerImpl.h"
+@interface SifitingViewController :ViewControllerImpl <UITableViewDataSource,UITableViewDelegate,Selectarrerdelegate>
 {
     __weak IBOutlet UITableView *_SifitableView;
+    NSMutableArray *_datalist;
 }
 
 @end

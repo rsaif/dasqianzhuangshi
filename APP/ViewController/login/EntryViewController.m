@@ -10,6 +10,7 @@
 #import "EntryuserCell.h"
 #import "EntrybuttonCell.h"
 #import "ResigerViewController.h"
+#import "Form.h"
 @interface EntryViewController ()
 
 @end
@@ -23,10 +24,7 @@
         // Custom initialization]
         
        
-        self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
-         _mantable.delegate = self;
-         _mantable.dataSource = self;
-        _mantable.backgroundColor = [UIColor groupTableViewBackgroundColor];
+      
         
       
     }
@@ -37,7 +35,13 @@
 {
     [super viewDidLoad];
     
-      self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(zhuceanniu)];
+    Form *f = [Form new];
+    f.checks = @[@"tel",@"null"];
+    //f.views = [];
+    
+    EntrybuttonCell *cell = [_mantable cellForRowAtIndexPath:0];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(zhuceanniu)];
     self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
     
    
@@ -65,7 +69,15 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     EntryuserCell *entryCell = CreateCell(@"EntryuserCell");
-    
+    if (indexPath.row == 0) {
+        
+        
+    }
+    else if (indexPath.row == 1)
+    {
+        entryCell.mima.text = @"输入密码";
+        
+    }
     return entryCell;
     
    }

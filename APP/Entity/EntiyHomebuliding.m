@@ -31,6 +31,9 @@
     t.Seo_Keywords = [dic objectForKey:@"seo_keywords"];
     t.Seo_description = [dic objectForKey:@"seo_description"];
     t.Img_url_phone = [dic objectForKey:@"img_url_phone"];
+   
+    
+   
     return t;
 }
 @end

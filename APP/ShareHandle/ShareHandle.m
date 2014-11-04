@@ -10,6 +10,10 @@
 #import "Config.h"
 #import "ViewStyle.h"
 @implementation ShareHandle
+
+
+
+
 +(ShareHandle *)shareHandle{
     static ShareHandle *sh;
     static dispatch_once_t onceToken;
@@ -23,6 +27,8 @@
     self = [super init];
     if (self) {
         //do sth here
+        
+   
     }
     return self;
 }

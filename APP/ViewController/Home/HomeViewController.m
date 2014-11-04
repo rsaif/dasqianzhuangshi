@@ -13,6 +13,9 @@
 #import "HomeDetailViewController.h"
 #import "UIImageView+WebCache.h"
 #import "EntityHomelist.h"
+#import <ASIHTTPRequest.h>
+
+
 //#import "HomeCategoryViewController.h"
 //#import "HomeGoodListViewController.h"
 @implementation HomeViewController
@@ -24,6 +27,7 @@
     // Do any additional setup after loading the view from its nib.
     
    
+      
     _dataListSlide = [NSMutableArray new];
     _dataList = [NSMutableArray new];
     _tableView.isFooter = NO;
@@ -32,8 +36,8 @@
        [_tableView registerNib:[UINib nibWithNibName:@"HomeSliderCell" bundle:nil] forCellReuseIdentifier:@"HomeSliderCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeBuildingCell" bundle:nil] forCellReuseIdentifier:@"HomeBuildingCell"];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu)];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu)];
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
     
     
     
@@ -52,6 +56,7 @@
 }
 -(void)refreshView{
     CGDataResult *r = [[Service serviceWithRequest:[self createRequestWithPost:YES]]homeSlider];
+   
     if (r.status.boolValue) {
         [_dataListSlide removeAllObjects];
         [_dataListSlide addObjectsFromArray:r.dataList];
@@ -59,7 +64,7 @@
     }
     
     CGDataResult *h  = [[Service serviceWithRequest:[self createRequestWithPost:YES] ]homelist];
-    if (r.status.boolValue) {
+    if (h.status.boolValue) {
         [_dataList removeAllObjects];
         [_dataList addObjectsFromArray:h.dataList];
         
@@ -118,6 +123,18 @@
     return _dataList.count+1;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    HomeBuildingCell *cell = (HomeBuildingCell*)[tableView cellForRowAtIndexPath:indexPath];
+    HomeDetailViewController *detail = [[HomeDetailViewController alloc]init];
+    detail.mingzi = cell.mingzi;
+    detail.picture = cell.picture;
+    detail.liulan  = cell.liulan;
+    detail.address = cell.address;
+
+   
+    
+   
+    
     [self.navigationController pushViewController:CreateViewController(@"HomeDetailViewController") animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

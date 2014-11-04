@@ -34,6 +34,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.93744860197368429" alpha="1" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="loupantu" destination="xjg-XM-LWK" id="pL8-WH-qUv"/>
+                <outlet property="scrollview" destination="gGO-tS-eA8" id="ia4-2m-XA8"/>
+            </connections>
             <point key="canvasLocation" x="333" y="334.5"/>
         </tableViewCell>
     </objects>

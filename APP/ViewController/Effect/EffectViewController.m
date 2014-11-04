@@ -19,14 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(zuohua)];
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
+    
     _dataList = [NSMutableArray new];
     
     
-    [_dataList addObjectsFromArray:[EntityEffect arrFromArr:@[@"http://wenwen.sogou.com/p/20110624/20110624050923-262735514.jpg",@"http://cdn.duitang.com/uploads/item/201111/09/20111109230753_kaeuy.thumb.600_0.jpg",@"http://wenwen.sogou.com/p/20110603/20110603170851-1624396958.jpg",@"http://www.28400.net/uploadfile/2011/1229/20111229113135683.jpg",@"http://cdn.duitang.com/uploads/item/201302/23/20130223133510_inBNW.thumb.600_0.jpeg",@"http://www.mofei.com.cn/fzl/UploadPic/2012/2012227142746921.jpg",@"http://images-fast.digu365.com/421cafb1be0cb5eb81b40e9f0edfacbf_0012.jpg",@"http://img1.3lian.com/img13/c4/98/d/61.jpg",@"http://tupian.qqjay.com/u/2013/0105/7_223430_13.jpg",@"http://wenwen.sogou.com/p/20111208/20111208195633-841302618.jpg",@"http://cdn.duitang.com/uploads/item/201303/23/20130323185807_rEvC4.jpeg",@"http://images-fast.digu365.com/eacd96d8511b26bf7c1024a0ea3f92bd_0009.jpg",@"http://e.hiphotos.baidu.com/zhidao/pic/item/c8177f3e6709c93d24dd514b9f3df8dcd100545a.jpg",@"http://img4.duitang.com/uploads/item/201302/23/20130223133436_BY4fZ.thumb.600_0.jpeg"]]];
+   // [_dataList addObjectsFromArray:[EntityEffect arrFromArr:@[@"http://wenwen.sogou.com/p/20110624/20110624050923-262735514.jpg",@"http://cdn.duitang.com/uploads/item/201111/09/20111109230753_kaeuy.thumb.600_0.jpg",@"http://wenwen.sogou.com/p/20110603/20110603170851-1624396958.jpg",@"http://www.28400.net/uploadfile/2011/1229/20111229113135683.jpg",@"http://cdn.duitang.com/uploads/item/201302/23/20130223133510_inBNW.thumb.600_0.jpeg",@"http://www.mofei.com.cn/fzl/UploadPic/2012/2012227142746921.jpg",@"http://images-fast.digu365.com/421cafb1be0cb5eb81b40e9f0edfacbf_0012.jpg",@"http://img1.3lian.com/img13/c4/98/d/61.jpg",@"http://tupian.qqjay.com/u/2013/0105/7_223430_13.jpg",@"http://wenwen.sogou.com/p/20111208/20111208195633-841302618.jpg",@"http://cdn.duitang.com/uploads/item/201303/23/20130323185807_rEvC4.jpeg",@"http://images-fast.digu365.com/eacd96d8511b26bf7c1024a0ea3f92bd_0009.jpg",@"http://e.hiphotos.baidu.com/zhidao/pic/item/c8177f3e6709c93d24dd514b9f3df8dcd100545a.jpg",@"http://img4.duitang.com/uploads/item/201302/23/20130223133436_BY4fZ.thumb.600_0.jpeg"]]];
     
     _collectionView.isFooter = NO;
     [_collectionView registerNib:[UINib nibWithNibName:@"EffectCell" bundle:nil] forCellWithReuseIdentifier:@"EffectCell"];
     
+}
+-(void)zuohua
+{
+    [self.navigationController pushViewController:CreateViewController(@"SifitingViewController")   animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +46,12 @@
     
 }
 -(void)refreshView{
-    
+    CGDataResult *h  = [[Service serviceWithRequest:[self createRequestWithPost:YES] ]effectHomege];
+    if (h.status.boolValue) {
+        [_dataList removeAllObjects];
+        //[_dataList addObjectsFromArray:h.dataList];
+        [_dataList addObjectsFromArray:h.dataList];
+    }
 }
 
 

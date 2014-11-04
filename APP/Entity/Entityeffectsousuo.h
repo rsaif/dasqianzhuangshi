@@ -35,4 +35,5 @@
 @property(nonatomic,strong)NSString *Is_sys;
 @property(nonatomic,strong)NSString *User_name;
 @property(nonatomic,strong)NSString *Update_time;
-@property(nonatomic,strong)NSString *Xgt_apartment;@end
+@property(nonatomic,strong)NSString *Xgt_apartment;
+@end

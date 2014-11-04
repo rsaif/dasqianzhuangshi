@@ -16,4 +16,13 @@
 @property(nonatomic,weak)IBOutlet UIImageView *backimageView;
 @property(nonatomic,strong)NSArray *array;
 
+
+
+@property(nonatomic,weak)NSString *mingzi;
+@property(nonatomic,weak)NSString *picture;
+@property(nonatomic,weak)NSString *address;
+@property(nonatomic,weak)NSString *liulan;
+
+
+
 @end

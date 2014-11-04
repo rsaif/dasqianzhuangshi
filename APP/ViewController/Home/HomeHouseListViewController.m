@@ -14,6 +14,14 @@
 @end
 
 @implementation HomeHouseListViewController
+-(id)initWithing:(NSString*)Catregeyid;
+
+{
+    if (self == [super init]) {
+        
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

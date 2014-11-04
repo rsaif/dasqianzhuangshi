@@ -69,5 +69,6 @@
  *  返回的操作
  */
 - (IBAction)goBack;
+-(void)setExtracellhidden:(UITableView*)tableView;
 @end
 

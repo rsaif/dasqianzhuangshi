@@ -9,5 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "Config.h"
 @interface ShareHandle : NSObject
+
+
+
+
+
+
+
 +(ShareHandle *)shareHandle;
+
+
+
 @end

@@ -7,7 +7,12 @@
 //
 
 #import "CGTableViewCell.h"
+#import "EntitiyVillageFloor.h"
 
 @interface HomeDetailImagesCell : CGTableViewCell
+{
+}
+@property(nonatomic,weak)IBOutlet UILabel *loupantu;
+@property(nonatomic,weak)IBOutlet UIScrollView *scrollview;
 
 @end

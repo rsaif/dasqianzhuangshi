@@ -8,7 +8,7 @@
 
 #import "ViewControllerImpl.h"
 #import "CGTableView+loadView2.h"
-#import "HomeViewController.h"
+
 @interface LearnShowViewController : ViewControllerImpl<UITableViewDelegate,UITableViewDataSource,UIView_LoadViewDelegate>{
     NSMutableArray *_dataList;
     NSMutableArray *_dataListSlide;

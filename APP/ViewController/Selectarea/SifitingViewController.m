@@ -27,10 +27,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _datalist = [NSMutableArray new];
     
-    SelectdifangCell *cell = CreateCell(@"SelectdifangCell");
-    _SifitableView.tableHeaderView = cell;
-}
+    [self showAnimated:YES title:@"户型图" post:YES whileExecutingBlock:^CGDataResult *(ASIHTTPRequest *request)
+     {
+         Service *s = [Service serviceWithRequest:request];
+         return [s learnphoto];
+         
+     }completionBlock:^(BOOL b,CGDataResult *r)
+     {
+         [_datalist addObjectsFromArray:r.dataList];
+                
+         
+     }];
+  }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;
@@ -74,17 +84,13 @@
     UILabel *wenzilabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
     wenzilabel.textAlignment = NSTextAlignmentCenter;
     if (section == 0) {
-        wenzilabel.text = @"楼盘";
+        wenzilabel.text = @"户型";
     }
     else if (section == 1)
     {
-        wenzilabel.text = @"户型";
-    }
-    else if (section == 2)
-    {
         wenzilabel.text = @"风格";
     }
-    [aView addSubview:wenzilabel];
+      [aView addSubview:wenzilabel];
     return aView;
 }
 -(void)Sellectarrera:(NSIndexPath *)indexpatch withbutton:(UIButton *)buttn

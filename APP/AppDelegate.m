@@ -55,7 +55,7 @@
     [thirdNavigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor]}];
     
     
-    ViewControllerImpl *fourthViewController = CreateViewController(@"EntryViewController");
+    ViewControllerImpl *fourthViewController = CreateViewController(@"FunctiondesingerViewController");
     fourthViewController.title = @"我的";
     fourthViewController.tabBarItem.image = [UIImage imageNamed:@"img_btn_mine"];
     UINavigationController *fourthNavigationController = [[UINavigationController alloc]

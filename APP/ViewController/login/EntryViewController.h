@@ -11,6 +11,8 @@
 @interface EntryViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     __weak IBOutlet UITableView *_mantable;
+
 }
+
 
 @end

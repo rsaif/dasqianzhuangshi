@@ -14,5 +14,6 @@
     
     NSMutableArray *_dataList;
 }
+-(id)initWithing:(NSString*)Catregeyid;
 
 @end

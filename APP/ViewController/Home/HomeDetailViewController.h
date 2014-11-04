@@ -8,9 +8,16 @@
 
 #import "ViewControllerImpl.h"
 
-@interface HomeDetailViewController : ViewControllerImpl{
+@interface HomeDetailViewController : ViewControllerImpl<UITableViewDataSource,UITableViewDelegate>{
     
     __weak IBOutlet UITableView *_tableView;
+    NSMutableArray *_datalist;
+    NSMutableArray *_datalist1;
+    NSMutableArray *_datalist2;
+    NSMutableArray *_datalist3;
 }
-
+@property(nonatomic,strong)NSString *picture;
+@property(nonatomic,weak)NSString *address;
+@property(nonatomic,weak)NSString *mingzi;
+@property(nonatomic,weak)NSString *liulan;
 @end

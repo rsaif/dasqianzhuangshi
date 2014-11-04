@@ -17,5 +17,16 @@
     // Drawing code
 }
 */
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    HomeDetailViewController *detail = [[HomeDetailViewController alloc] init];
+       self.mingzi.text = self.detail.mingzi;
+     self.address.text = self.detail.address;
+    self.liulan.text = self.detail.liulan;
+  //  [self.picture sd_setImageWithURL:[NSURL URLWithString:self.detail.picture] placeholderImage:DefaultImage];
+    
+    
+}
 
 @end

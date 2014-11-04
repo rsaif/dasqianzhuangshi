@@ -8,9 +8,12 @@
 
 #import "ViewControllerImpl.h"
 #import "CGTableView+loadView2.h"
+#import "HomeDetailViewController.h"
 @interface HomeViewController : ViewControllerImpl<UITableViewDelegate,UITableViewDataSource,UIView_LoadViewDelegate>{
     NSMutableArray *_dataList;
     NSMutableArray *_dataListSlide;
     __weak IBOutlet CGTableView_loadView2 *_tableView;
 }
+
+
 @end

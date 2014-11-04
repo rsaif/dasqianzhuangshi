@@ -8,6 +8,7 @@
 
 #import "EffectCell.h"
 #import "EntityEffect.h"
+
 #import "UIImageView+WebCache.h"
 
 @implementation EffectCell
@@ -15,7 +16,7 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     EntityEffect *e = self.data;
-    [_imgView setImageWithURL:[NSURL URLWithString:e.url] placeholderImage:DefaultImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+       [_imgView setImageWithURL:[NSURL URLWithString:e.url] placeholderImage:DefaultImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
         if (image) {
             _imgView.image = image;
             CGRect frame = _imgView.frame;

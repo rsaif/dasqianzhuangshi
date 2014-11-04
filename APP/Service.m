@@ -104,6 +104,7 @@
     
     NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"sum":@"3"} options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
+   
     
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
@@ -202,7 +203,7 @@
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
         return [CGDataResult getResultFromDic:dic className:
-                @"Entitydigarmdetail"];
+                @"EntitiyVillageFloor"];
         
     }];
 }
@@ -239,7 +240,7 @@
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
         return [CGDataResult getResultFromDic:dic className:
-                @"EntityVillageFloorModel"];
+                @"EntitiyVillageFloor"];
         
     }];
 
@@ -258,7 +259,7 @@
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
         return [CGDataResult getResultFromDic:dic className:
-                @"EntityVillageFloorModel"];
+                @"EntitiyVillageFloor"];
         
     }];
 }
@@ -288,13 +289,13 @@
     
     
     
-    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"3"} options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString *parames = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{@"top":@"4"} options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSString *url = [NSString stringWithFormat:@"%@/CaseMethad?methodName=%@&parames=%@",ZWEBSEARCE,methadName,parames];
     
     return [self loadNetworkDataWithUrl:url complete:^CGDataResult *(NSData *data,NSString * str,NSMutableDictionary *dic) {
         
         return [CGDataResult getResultFromDic:dic className:
-                @"Entityeffecthomepage"];
+                @"EntityEffect"];
         
     }];
     

@@ -27,6 +27,14 @@
     self.subtitle.numberOfLines = 2;
     self.subtitle.lineBreakMode = NSLineBreakByCharWrapping;
     
+    self.picture = r.Img_url;
+    self.address = r.Detailed_addres;
+    self.mingzi = r.title;
+    self.liulan = r.Class_list;
+    
+  
+    
+    
       [self.backimageView sd_setImageWithURL:[NSURL URLWithString:r.Img_url] placeholderImage:DefaultImage];
        // [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.art] placeholderImage:DefaultImage];
 

@@ -35,6 +35,7 @@
 @property(nonatomic,strong)NSString *Is_hot;
 @property(nonatomic,strong)NSString *Is_slide;
 @property(nonatomic,strong)NSString *Is_sys;
+@property(nonatomic,strong)NSString *Zaihaiyao;
 
 @property(nonatomic,strong)NSString *User_name;
 @property(nonatomic,strong)NSString *Update_name;

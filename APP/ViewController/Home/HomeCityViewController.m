@@ -9,6 +9,8 @@
 #import "HomeCityViewController.h"
 #import "HomeCityCell.h"
 #import <SlideNavigationController.h>
+#import "EntiyHomebuliding.h"
+#import "HomeHouseListViewController.h"
 @interface HomeCityViewController ()<UISearchBarDelegate>
 
 @end
@@ -19,10 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _dataList = [NSMutableArray new];
-    [_dataList addObjectsFromArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""]];
+   // [_dataList addObjectsFromArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""]];
     _tableView.isFooter = NO;
     [_tableView registerNib:[UINib nibWithNibName:@"HomeCityCell" bundle:nil] forCellReuseIdentifier:@"HomeCityCell"];
     [self addSearchBar];
+    [self setExtracellhidden:_tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +35,7 @@
 
 #pragma mark - custom methods
 -(void)addSearchBar{
-    UISearchBar *bar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    UISearchBar *bar = [[UISearchBar alloc] initWithFrame:CGRectMake(40, 0, 10, 44)];
     bar.placeholder = @"直接搜我家";
     bar.backgroundColor = [UIColor clearColor];
     for (UIView *v1 in bar.subviews) {
@@ -59,15 +62,36 @@
 }
 -(void)refreshView{
     
+    CGDataResult *r = [[Service serviceWithRequest:[self createRequestWithPost:YES]]homebuliding];
+    
+    if (r.status.boolValue) {
+        [_dataList removeAllObjects];
+        [_dataList addObjectsFromArray:r.dataList];
+        [_tableView reloadData];
+        
+               
+    }
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [[SlideNavigationController sharedInstance] toggleRightMenu];
-    [[(UITabBarController *)[[SlideNavigationController sharedInstance] topViewController] viewControllers][0] pushViewController:CreateViewController(@"HomeHouseListViewController") animated:YES];
+    EntiyHomebuliding *building = _dataList[indexPath.row];
+    
+    HomeHouseListViewController *homelist = [[HomeHouseListViewController alloc] initWithing:building.Id];
+   /* [[SlideNavigationController sharedInstance] toggleRightMenu];
+    [[(UITabBarController *)[[SlideNavigationController sharedInstance] topViewController] viewControllers][0] pushViewController:CreateViewController(@"HomeHouseListViewController") animated:YES];*/
     
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
+    
+    HomeCityCell *cell = CreateCell(@"HomeCityCell");
+   
+    cell.indexPath = indexPath;
+    cell.data = _dataList;
+   
+  
+    return cell;
+   /* switch (indexPath.row) {
         case 0:
         {
             HomeCityCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCityCell"];
@@ -83,10 +107,11 @@
             return cell;
         }
             break;
-    }
+    }*/
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _dataList.count+1;
+    return _dataList.count;
+   
 }
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -12,7 +12,7 @@
 #import "ExtendViewCell.h"
 #import "LearnCateditCell.h"
 #import "KKContactCell.h"
-
+#import "Entitylearnphoto.h"
 @interface LearnCatViewController ()
 
 
@@ -33,9 +33,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    
-    
+    _datalist = [NSMutableArray new];
+    [self showAnimated:YES title:@"户型图" post:YES whileExecutingBlock:^CGDataResult *(ASIHTTPRequest *request)
+     {
+         Service *s = [Service serviceWithRequest:request];
+         return [s learnphoto];
+         
+     }completionBlock:^(BOOL b,CGDataResult *r)
+     {
+         [_datalist addObjectsFromArray:r.dataList];
+         [mainTable reloadData];
+         
+     }];
       mainTable.delegate = self;
     mainTable.dataSource = self;
     
@@ -49,12 +58,6 @@
     [self performSelector:@selector(firstOneClicked) withObject:self afterDelay:0.2f];
     
    }
--(void)setExtracellhidden:(UITableView*)tableView
-{
-    UIView *view = [UIView new];
-    view.backgroundColor = [UIColor clearColor];
-    [tableView setTableFooterView:view];
-}
 - (void)firstOneClicked{
     didSection = 0;
     endSection = 0;
@@ -132,7 +135,11 @@
     
     UIImageView *logoView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 90, 90)];
    LearnCatheaderCell *cell = CreateCell(@"LearnCatheaderCell");
+    Entitylearnphoto *poto = _datalist[section];
+  
     
+    cell.Zuhangxiu.text = poto.title;
+    cell.zitifengbu.text = poto.Seotitle;
    
     //[logoView setImage:[UIImage imageNamed:[_array objectAtIndex:section]]];
     cell.imgStudy.image = [UIImage imageNamed:[_array objectAtIndex:section]];

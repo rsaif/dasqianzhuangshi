@@ -21,7 +21,12 @@
 	// Do any additional setup after loading the view.
 }
 
-
+-(void)setExtracellhidden:(UITableView*)tableView
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
 -(void)Init{
     if(IS_IOS7_DEVICE)self.edgesForExtendedLayout = UIRectEdgeNone;
     allRequest = [NSMutableArray new];

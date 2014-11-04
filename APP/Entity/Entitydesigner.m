@@ -36,6 +36,8 @@
     t.Is_sys = [dic objectForKey:@"is_sys"];
     t.Add_time = [dic objectForKey:@"add_time"];
     t.User_name = [dic objectForKey:@"user_name"];
+    t.Zy_style = [dic objectForKey:@"zy_style"];
+    t.Zy_ln = [dic objectForKey:@"zy_ln"];
    
     
     

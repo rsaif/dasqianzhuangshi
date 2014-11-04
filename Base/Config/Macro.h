@@ -49,6 +49,8 @@
 //TODO:判断IPHONE5设备
 #define IS_IPHONE_5  ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
+#define IS_IPHONE_4S ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+
 //TODO:对象的快速创建
 //TODO:获取当前设备的StoryBoard
 #define SOTORYBOARD IS_IPHONE_5?@"MainStoryboard2":@"MainStoryboard2"

@@ -37,6 +37,7 @@
     t.Add_time = [dic objectForKey:@"add_time"];
     t.User_name = [dic objectForKey:@"user_name"];
     t.Update_name = [dic objectForKey:@"update_time"];
+    t.Zaihaiyao = [dic objectForKey:@"zhaiyao"];
     
     
     return t;

@@ -7,12 +7,25 @@
 //
 
 #import "HomeCityCell.h"
+#import "EntiyHomebuliding.h"
 
 @implementation HomeCityCell
+-(void)setData:(NSArray*)data
+{
+    EntiyHomebuliding *building = data[self.indexPath.row];
+    self.detailTextLabel.text = building.title;
+    NSLog(@"--%@---",building.title);
+    
+}
 -(void)layoutSubviews{
-    [super layoutSubviews];
+   [super layoutSubviews];
+    
+    
+    
+  /*  EntiyHomebuliding *builiding = self.data[indexPath.row];
+    cell.detailTextLabel.text = builiding.title;
     self.textLabel.text = @"标题";
-    self.detailTextLabel.text = @"123456";
+    self.detailTextLabel.text = @"123456";*/
 }
 
 @end

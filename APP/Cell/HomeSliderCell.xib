@@ -14,7 +14,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="jfo-Xi-S5b">
-                        <rect key="frame" x="0.0" y="0.0" width="1280" height="577"/>
+                        <rect key="frame" x="0.0" y="0.0" width="2240" height="1009"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </scrollView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" id="Akv-jC-Rdg">
@@ -29,7 +29,7 @@
                 <outlet property="_pageControl" destination="Akv-jC-Rdg" id="y2x-FO-Za8"/>
                 <outlet property="_scrollView" destination="jfo-Xi-S5b" id="sXs-Kk-kll"/>
             </connections>
-            <point key="canvasLocation" x="229" y="375"/>
+            <point key="canvasLocation" x="229" y="374.5"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

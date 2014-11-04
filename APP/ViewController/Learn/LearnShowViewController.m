@@ -7,12 +7,14 @@
 //
 
 #import "LearnShowViewController.h"
-#import "HomeSliderCell.h"
-#import "HomeBuildingCell.h"
+#import "LearndecrotionCellTableViewCell.h"
+#import "LearnBuildingCell.h"
 #import <SlideNavigationController.h>
 #import "HomeDetailViewController.h"
 #import "UIImageView+WebCache.h"
 #import "EntityHomelist.h"
+#import "LearnCatViewController.h"
+#import "LearnWbViewController.h"
 @interface LearnShowViewController ()
 
 @end
@@ -27,13 +29,17 @@
     _tableView.isFooter = NO;
     
     
-    [_tableView registerNib:[UINib nibWithNibName:@"HomeSliderCell" bundle:nil] forCellReuseIdentifier:@"HomeSliderCell"];
-    [_tableView registerNib:[UINib nibWithNibName:@"HomeBuildingCell" bundle:nil] forCellReuseIdentifier:@"HomeBuildingCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"LearndecrotionCellTableViewCell" bundle:nil] forCellReuseIdentifier:@"LearndecrotionCellTableViewCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"LearnBuildingCell" bundle:nil] forCellReuseIdentifier:@"LearnBuildingCell"];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu)];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(zuola)];
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
     
 
+}
+-(void)zuola
+{
+    [self .navigationController pushViewController:CreateViewController(@"LearnCatViewController") animated:YES];
 }
 -(BOOL)hidesBottomBarWhenPushed{
     return NO;
@@ -47,13 +53,14 @@
     
 }
 -(void)refreshView{
-    CGDataResult *r = [[Service serviceWithRequest:[self createRequestWithPost:YES]]homeSlider];
+    CGDataResult *r = [[Service serviceWithRequest:[self createRequestWithPost:YES]]learnscrollview];
     if (r.status.boolValue) {
         [_dataListSlide removeAllObjects];
         [_dataListSlide addObjectsFromArray:r.dataList];
+       
     }
     
-    CGDataResult *h  = [[Service serviceWithRequest:[self createRequestWithPost:YES] ]homelist];
+    CGDataResult *h  = [[Service serviceWithRequest:[self createRequestWithPost:YES] ]learntablelist];
     if (r.status.boolValue) {
         [_dataList removeAllObjects];
         [_dataList addObjectsFromArray:h.dataList];
@@ -68,7 +75,7 @@
     switch (indexPath.row) {
         case 0:
         {
-            HomeSliderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeSliderCell"];
+            LearndecrotionCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LearndecrotionCellTableViewCell"];
             cell.dataList = _dataListSlide;
             
             
@@ -78,17 +85,12 @@
             
         default:
         {
-            HomeBuildingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeBuildingCell"];
+            LearnBuildingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LearnBuildingCell"];
             
             cell.data = _dataList;
             cell.indexPath = indexPath;
             
-                   EntityHomelist *r = _dataList[indexPath.row -1];
-             cell.textLabel.text = r.title;
-             
-             cell.detailTextLabel.text = r.Detailed_addres;
-             [cell.imageView sd_setImageWithURL:[NSURL URLWithString:r.Img_url] placeholderImage:DefaultImage];
-             cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"img_btn_enter"]];
+                         
             
             return cell;
         }
@@ -97,9 +99,13 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataList.count+1;
-}
+   }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.navigationController pushViewController:CreateViewController(@"HomeDetailViewController") animated:YES];
+    if (indexPath.row != 0) {
+        LearnBuildingCell *cell = (LearnBuildingCell*)[tableView cellForRowAtIndexPath:indexPath];
+        LearnWbViewController *webView = [[LearnWbViewController alloc] initWithstring:cell.stid];
+        [self.navigationController pushViewController:webView animated:YES];
+    }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.item) {
